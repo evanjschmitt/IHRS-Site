@@ -1,0 +1,104 @@
+//Variables//
+$siteBlue: #4db1ea;
+$siteDarkBlue: #0069a5;
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+    url(../css/rabbitAssets/outsideImages/possibleHeader.jpg); // width: 100%;
+  height: 600px;
+  // width: 80%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  background-size: cover;
+  background-position: top;
+  .heroText {
+    padding: 20px;
+    padding-top: 30px;
+    padding-left: 25px;
+    color: white;
+    h1 {
+      font-size: 80px;
+      font-family: robotoSlab;
+      width: 800px;
+    }
+    h3 {
+      font-size: 30px;
+      max-width: 800px;
+      font-family: robotoSlabLight;
+      margin-top: 100px;
+    }
+    span {
+      color: $siteBlue;
+    }
+  }
+}
+
+.slideShow {
+  height: 400px;
+  max-width: 75%;
+  margin: auto;
+  background-color: red;
+  margin-bottom: 40px;
+  img {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+.threeBoxes {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: auto;
+  padding: 20px;
+  .box {
+    height: 600px;
+    width: 25%;
+    min-width: 300px;
+    background-color: green;
+  }
+}
+
+.ourMission {
+  height: 800px;
+  display: flex;
+  // align-items: center;
+  justify-content: space-evenly;
+  .missionStatement {
+    width: 50%;
+    h2 {
+      font-family: robotoSlab;
+      font-size: 30px;
+    }
+    p {
+      margin-bottom: 20px;
+      font-family: poppinsReg;
+      font-family: 20px;
+    }
+    li {
+      margin-bottom: 20px;
+      font-family: poppinsReg;
+    }
+  }
+  .logo {
+    background-image: url(../css/rabbitAssets/icons/newLogo.png);
+    height: 500px;
+    width: 500px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 20px;
+  }
+}
+
+//Media Queries//
+@media (max-width: 1200px) {
+  .threeBoxes {
+    flex-direction: column;
+    .box {
+      margin-bottom: 25px;
+      width: 400px;
+    }
+  }
+  
+}

@@ -1,0 +1,141 @@
+//Stylesheet imports//
+@import "home.scss";
+@import "fonts.scss";
+
+
+//Variables//
+$siteBlue: #4db1ea;
+$siteDarkBlue: #0069a5;
+
+// Constant Elements SCSS//
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+
+//Nav Styling//
+nav {
+  background-color: $siteBlue;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .homeButton {
+    width: 80px;
+    height: 20px;
+    img {
+      max-width: 100px;
+      max-height: 60px;
+      margin-top: -20px;
+      margin-left: 10px;
+    }
+  }
+  .links {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    // background-color: red;
+    a {
+      text-decoration: none;
+      font-size: 20px;
+      :hover {
+        background-color: $siteDarkBlue;
+      }
+    }
+    i {
+      margin-left: 10px;
+    }
+
+    .link {
+      display: flex;
+      //   align-items: center;
+      justify-content: space-evenly;
+      flex-direction: column;
+      //   background-color: red;
+      
+    }
+    .adoption{
+        width: 200px;
+      margin-top: 110px;
+    }
+    .rabbit{
+        width: 200px;
+      margin-top: 280px;
+    }
+    .directLink{
+        margin-top: 10px;
+        padding: 10px;
+    }
+  }
+  .subMenu {
+    background-color: $siteDarkBlue;
+    padding: 5px;
+    margin-top: -16px;
+    display: none;
+    li {
+      list-style-type: none;
+      margin-top: 5px;
+    }
+  }
+}
+a {
+  color: white;
+}
+
+//Footer Styling
+.footer{
+  footer{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  height: 75px;
+  background-color:$siteBlue;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  
+  .title{
+    font-size: 25px;
+    width: 200px;
+    margin-top: 10px;
+    color: white;
+    font-family: robotoSlab;
+    margin-left: 20px;
+  }
+  .copyright{
+    font-family: robotoSlabNormal;
+    margin-top: 50px;
+    color: white;
+  }
+
+  .socialLinks{
+    
+    a{
+      margin: 10px;
+      i{
+        font-size: 60px;
+      }
+    }
+  }
+}

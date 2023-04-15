@@ -1,0 +1,233 @@
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../css/rabbitAssets/outsideImages/possibleHeader.jpg);
+  height: 600px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  background-size: cover;
+  background-position: top;
+}
+.hero .heroText {
+  padding: 20px;
+  padding-top: 30px;
+  padding-left: 25px;
+  color: white;
+}
+.hero .heroText h1 {
+  font-size: 80px;
+  font-family: robotoSlab;
+  width: 800px;
+}
+.hero .heroText h3 {
+  font-size: 30px;
+  max-width: 800px;
+  font-family: robotoSlabLight;
+  margin-top: 100px;
+}
+.hero .heroText span {
+  color: #4db1ea;
+}
+
+.slideShow {
+  height: 400px;
+  max-width: 75%;
+  margin: auto;
+  background-color: red;
+  margin-bottom: 40px;
+}
+.slideShow img {
+  width: 500px;
+  height: 500px;
+}
+
+.threeBoxes {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: auto;
+  padding: 20px;
+}
+.threeBoxes .box {
+  height: 600px;
+  width: 25%;
+  min-width: 300px;
+  background-color: green;
+}
+
+.ourMission {
+  height: 800px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.ourMission .missionStatement {
+  width: 50%;
+}
+.ourMission .missionStatement h2 {
+  font-family: robotoSlab;
+  font-size: 30px;
+}
+.ourMission .missionStatement p {
+  margin-bottom: 20px;
+  font-family: poppinsReg;
+  font-family: 20px;
+}
+.ourMission .missionStatement li {
+  margin-bottom: 20px;
+  font-family: poppinsReg;
+}
+.ourMission .logo {
+  background-image: url(../css/rabbitAssets/icons/newLogo.png);
+  height: 500px;
+  width: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 20px;
+}
+
+@media (max-width: 1200px) {
+  .threeBoxes {
+    flex-direction: column;
+  }
+  .threeBoxes .box {
+    margin-bottom: 25px;
+    width: 400px;
+  }
+}
+@font-face {
+  font-family: robotoSlab;
+  src: url(../css/fonts/robotoSlab/RobotoSlab-Bold.ttf);
+}
+@font-face {
+  font-family: robotoSlabLight;
+  src: url(../css/fonts/robotoSlab/RobotoSlab-ExtraLight.ttf);
+}
+@font-face {
+  font-family: robotoSlabNormal;
+  src: url(../css/fonts/robotoSlab/RobotoSlab-Light.ttf);
+}
+@font-face {
+  font-family: poppinsReg;
+  src: url(../css/fonts/poppins/Poppins-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+nav {
+  background-color: #4db1ea;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .homeButton {
+  width: 80px;
+  height: 20px;
+}
+nav .homeButton img {
+  max-width: 100px;
+  max-height: 60px;
+  margin-top: -20px;
+  margin-left: 10px;
+}
+nav .links {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+nav .links a {
+  text-decoration: none;
+  font-size: 20px;
+}
+nav .links a :hover {
+  background-color: #0069a5;
+}
+nav .links i {
+  margin-left: 10px;
+}
+nav .links .link {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+nav .links .adoption {
+  width: 200px;
+  margin-top: 110px;
+}
+nav .links .rabbit {
+  width: 200px;
+  margin-top: 280px;
+}
+nav .links .directLink {
+  margin-top: 10px;
+  padding: 10px;
+}
+nav .subMenu {
+  background-color: #0069a5;
+  padding: 5px;
+  margin-top: -16px;
+  display: none;
+}
+nav .subMenu li {
+  list-style-type: none;
+  margin-top: 5px;
+}
+
+a {
+  color: white;
+}
+
+.footer {
+  height: 75px;
+  background-color: #4db1ea;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.footer footer {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer .title {
+  font-size: 25px;
+  width: 200px;
+  margin-top: 10px;
+  color: white;
+  font-family: robotoSlab;
+  margin-left: 20px;
+}
+.footer .copyright {
+  font-family: robotoSlabNormal;
+  margin-top: 50px;
+  color: white;
+}
+.footer .socialLinks a {
+  margin: 10px;
+}
+.footer .socialLinks a i {
+  font-size: 60px;
+}
+
+/*# sourceMappingURL=styles.css.map */

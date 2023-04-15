@@ -1,0 +1,177 @@
+
+<!-- Old Nav Links -->
+
+<div class="links">
+          <div class="adoption link">
+            <a href="#"
+              ><p>Adoption<i class="fa-solid fa-caret-down"></i></p>
+              <div class="subMenu">
+                <ul>
+                  <li><a href="#rabbitAdoption">Adopting a Rabbit</a></li>
+                  <li><a href="#adoptables">Adoptable Rabbits</a></li>
+                  <li><a href="#sanctuary">Sanctuary Rabbits</a></li>
+                  <li>
+                    <a href="#adoptQuestionnaire">Questionnaire</a>
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </div>
+          <div class="rabbit link">
+            <a href="#">
+              <p>Rabbit Care <i class="fa-solid fa-caret-down"></i></p>
+              <div class="subMenu">
+                <ul>
+                  <li><a href="#rabbitsAsPets">Rabbits as Pets</a></li>
+                  <li><a href="#foodAndGreens">Food and Greens</a></li>
+                  <li><a href="#housing">Housing</a></li>
+                  <li>
+                    <a href="#litter">Litter</a>
+                  </li>
+                  <li><a href="#rabbitAdoption">Adopting a Rabbit</a></li>
+                  <li><a href="#adoptables">Adoptable Rabbits</a></li>
+                  <li><a href="#sanctuary">Sanctuary Rabbits</a></li>
+                  <li>
+                    <a href="#adoptQuestionnaire">Questionnaire</a>
+                  </li>
+                  <li><a href="#sanctuary">Sanctuary Rabbits</a></li>
+                  <li>
+                    <a href="#adoptQuestionnaire">Questionnaire</a>
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </div>
+          <div class="resources link">
+            <a href="#">
+              <p>Resources<i class="fa-solid fa-caret-down"></i></p>
+            </a>
+          </div>
+          <div class="directLink">
+            <a href="#events"><p>Events</p></a>
+          </div>
+          <div class="link">
+            <a href="#"
+              ><p>Volunteer<i class="fa-solid fa-caret-down"></i></p
+            ></a>
+          </div>
+          <div class="link">
+            <a href="#"
+              ><p>Support Us<i class="fa-solid fa-caret-down"></i></p>
+            </a>
+          </div>
+          <div class="directLink">
+            <a href="#contact"><p>Contact Us</p></a>
+          </div>
+        </div>
+
+<!-- IHRS Slideshow Code -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="8000">
+    <!-- Carousel indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+        <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+        <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="3" class=""></li>
+    </ol>
+    <!-- Wrapper for carousel items -->
+
+    <div class="carousel-inner">
+
+        <div class="item">
+            <div class="item-slide">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>Bunny of the day!</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <a id="plcBody_lnkFeaturedRabbitPhoto" title="Razzle is looking for a good home!" class="img img-featured-rabbit" href="rabbit-adoption/adoption-details.aspx?ID=4603" style="max-height: 230px;"><img title="Razzle is looking for a good home!" src="RabbitPhotos/4603_cfa0e9c6-5366-40f6-b107-73a8c28bc4ac.png" alt="Razzle"></a>
+                    </div>
+                    <div class="col-sm-8">
+                        <h2>Razzle</h2> 
+                        Learn more about me, <a id="plcBody_lnkFeaturedRabbitName" href="rabbit-adoption/adoption-details.aspx?ID=4603">Razzle</a>. I have been lucky to be rescued by IHRS, but now I am looking 
+                        for my furever family and my opportunity to change your life. Can I go home with you? You can start the adoption process 
+                        by Razzle, please <a href="rabbit-adoption/questionnaire.aspx">submitting a questionnaire</a>. 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="item-slide">
+                <div class="row">
+                    <div class="col-sm-4 text-center">
+                        <a href="/memberships" class="text-center">
+                            <img id="plcBody_imgFlyer" class="img img-thumbnail" alt="Membership" src="img/memberships/MembershipFlyer1024_1.jpg" style="border-width: 1px !important; max-height: 290px">
+                        </a>
+                    </div>
+                    <div class="col-sm-8">
+                        <h1 style="">IHRS Memberships</h1>
+                        <br>
+                        <h3 style="">Become A Member!</h3>
+                        <p>
+                            Want to show your continued support for the Indiana House Rabbit Society and get members-only benefits? 
+                            Consider becoming a member or gifting a membership to a bunny lover in your life!
+                            <br>
+                            <a href="/Memberships" class="btn btn-primary">Find out more</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="item active">
+            <div class="item-slide">
+                <h2 style="">GoFundMe!</h2>
+                <p>
+                    Want to help us right now? You can make an immense difference by visiting our 
+                    <a href="http://indianahrs.org/gofundme" title="Donate Now" target="_blank">GoFundMe </a>campaign and pledging your support 
+                    one time or on a sustaining basis. 100% of donations we collect from GoFundMe go directly to the cost foster care and continuance 
+                    of our mission of helping rabbits in Indiana.
+                </p>
+                <div class="row text-center">
+                    <a href="http://indianahrs.org/gofundme" title="Donate Now" target="_blank">
+                        <img src="gfx/gfm-donate-now-button.png" alt="GoFundMe Indiana House Rabbit Society" class="img img-responsive thumbnail">
+                    </a>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="item">
+            <div class="item-slide">
+                <h2 style="">Interested in Adoption?  </h2>
+                <h3 style="">We can help you find the perfect companion!</h3>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="/gfx/baby-bunnies.jpg" alt="baby bunnies" class="img img-thumbnail" style="max-width: 280px">
+                    </div>
+                    <div class="col-sm-6">
+                        <p>
+                            Interested in adoption? View our <a href="../../rabbit-adoption/adoption-details.aspx">adoptable rabbits</a> now. If 
+                            you want to move forward with an adoption, fill out our <a href="../../rabbit-adoption/questionnaire.aspx">questionnaire</a> to get 
+                            started.
+                            <br>
+                            <a href="#" onclick="redirect('../../rabbit-adoption/adoption-details.aspx')" class="btn btn-success">View Adoptables</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel controls -->
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+
+    </div>
+</div>
+
