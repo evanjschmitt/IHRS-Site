@@ -52,11 +52,83 @@ $siteDarkBlue: #0069a5;
   justify-content: space-evenly;
   margin: auto;
   padding: 20px;
+
   .box {
-    height: 600px;
-    width: 25%;
+    height: 620px;
+    width: calc(300px + 1vw);
     min-width: 300px;
-    background-color: green;
+    // background-color: lightgray;
+    border: black 2px solid;
+    border-radius: 10px;
+    h3 {
+      font-size: 45px;
+      margin-top: 20px;
+      color: black;
+      font-family: robotoSlabNormal;
+    }
+    .event {
+      font-size: 20px;
+      display: flex;
+      text-align: center;
+      a {
+        color: $siteBlue;
+      }
+      p {
+        padding: 10px;
+      }
+      span {
+        text-decoration: underline;
+        margin-top: 15px;
+      }
+    }
+
+    .eventsBox {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+
+      .eventsButton {
+        margin-top: 20px;
+        a {
+          text-decoration: none;
+          font-size: 25px;
+          font-family: poppinsReg;
+          span {
+            padding: 20px;
+            background-color: #0069a5;
+            border-radius: 50px;
+          }
+        }
+      }
+    }
+    .socialsBox {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+      max-height: 400px;
+
+      .socialButtons {
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        .socialButton {
+          background-color: #0069a5;
+
+          margin-top: 20px;
+          border-radius: 50px;
+          padding: 10px;
+          a {
+            font-size: 30px;
+            text-decoration: none;
+            padding: 10px;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -100,5 +172,4 @@ $siteDarkBlue: #0069a5;
       width: 400px;
     }
   }
-  
 }
