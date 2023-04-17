@@ -54,7 +54,7 @@ $siteDarkBlue: #0069a5;
   padding: 20px;
 
   .box {
-    height: 620px;
+    height: 450px;
     width: calc(300px + 1vw);
     min-width: 300px;
     // background-color: lightgray;
@@ -95,9 +95,10 @@ $siteDarkBlue: #0069a5;
           font-size: 25px;
           font-family: poppinsReg;
           span {
-            padding: 20px;
             background-color: #0069a5;
+            margin-top: 20px;
             border-radius: 50px;
+            padding: 12px;
           }
         }
       }
@@ -117,16 +118,42 @@ $siteDarkBlue: #0069a5;
         flex-direction: column;
         .socialButton {
           background-color: #0069a5;
-
           margin-top: 20px;
           border-radius: 50px;
           padding: 10px;
-          a {
+
+          span {
             font-size: 30px;
-            text-decoration: none;
             padding: 10px;
           }
+          a {
+            text-decoration: none;
+          }
         }
+      }
+    }
+
+    .quickLinks{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+      .link{
+        font-size: 20px;
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      padding: 10px;
+      a {
+        color: $siteBlue;
+      }
+      p {
+        padding: 10px;
+      }
+      span {
+        text-decoration: underline;
+        margin-top: 15px;
+      }
       }
     }
   }
@@ -151,6 +178,7 @@ $siteDarkBlue: #0069a5;
     li {
       margin-bottom: 20px;
       font-family: poppinsReg;
+      margin-left: 20px;
     }
   }
   .logo {
@@ -170,6 +198,11 @@ $siteDarkBlue: #0069a5;
     .box {
       margin-bottom: 25px;
       width: 400px;
+    }
+  }
+  .ourMission {
+    .logo {
+      width: 300px;
     }
   }
 }
