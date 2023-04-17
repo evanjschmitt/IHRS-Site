@@ -94,6 +94,7 @@
   margin-top: 20px;
   border-radius: 50px;
   padding: 12px;
+  color: white;
 }
 .threeBoxes .box .socialsBox {
   display: flex;
@@ -118,6 +119,7 @@
 .threeBoxes .box .socialsBox .socialButtons .socialButton span {
   font-size: 30px;
   padding: 10px;
+  color: white;
 }
 .threeBoxes .box .socialsBox .socialButtons .socialButton a {
   text-decoration: none;
@@ -147,7 +149,7 @@
 }
 
 .ourMission {
-  height: 800px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: space-evenly;
 }
@@ -209,6 +211,85 @@
   font-family: poppinsReg;
   src: url(../css/fonts/poppins/Poppins-Regular.ttf);
 }
+.app p,
+.app li {
+  font-family: poppinsReg;
+  font-size: 20px;
+}
+.app li {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+.app h1 {
+  font-family: robotoSlab;
+  font-size: 50px;
+}
+.app span {
+  color: #4db1ea;
+}
+.app p {
+  font-family: poppinsReg;
+}
+.app h2 {
+  margin-top: 50px;
+  font-family: robotoSlab;
+  font-size: 35px;
+}
+.app .textSection {
+  width: 45%;
+}
+.app .textSection a {
+  color: #4db1ea;
+}
+.app img {
+  border-radius: 20px;
+  margin-top: 20px;
+  width: 400px;
+}
+.app .section {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+.app .soloSection {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  flex-direction: column;
+}
+.app .soloSection .adoptablesButton {
+  margin-top: 100px;
+  margin-bottom: 75px;
+}
+.app .soloSection .adoptablesButton a {
+  text-decoration: none;
+}
+.app .soloSection .adoptablesButton a span {
+  background-color: #4db1ea;
+  padding: 25px;
+  font-size: 25px;
+  border-radius: 25px;
+  margin-bottom: 75px;
+  color: white;
+  font-family: robotoSlabNormal;
+}
+
+@media (max-width: 1230px) {
+  .section {
+    flex-direction: column;
+  }
+  .section .textSection {
+    width: 80%;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -237,6 +318,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-family: poppinsReg;
 }
 nav .homeButton {
   width: 80px;
@@ -249,7 +331,7 @@ nav .homeButton img {
   margin-left: 10px;
 }
 nav .links {
-  margin-right: 50px;
+  margin-right: 20px;
 }
 nav .links .parent {
   display: block;
@@ -257,6 +339,7 @@ nav .links .parent {
   float: left;
   line-height: 50px;
   background-color: #4db1ea;
+  margin-right: 10px;
 }
 nav .links .parent a {
   margin: 10px;
@@ -274,12 +357,14 @@ nav .links .child li {
   background-color: #4db1ea;
   line-height: 40px;
   color: white;
-  width: 200px;
+  width: 220px;
 }
 nav .links .child li a {
   color: white;
-  width: 100%;
   align-items: center;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 nav .links ul {
   list-style: none;
@@ -313,34 +398,55 @@ nav .links .expand {
   justify-content: space-evenly;
 }
 .footer footer {
-  width: 95%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 50px;
+  padding: 10px;
 }
 .footer .title {
-  font-size: 25px;
-  width: 200px;
+  font-size: 23px;
   margin-top: 10px;
   color: white;
   font-family: robotoSlab;
   margin-left: 20px;
+  line-height: 100%;
 }
 .footer .copyright {
   font-family: robotoSlabNormal;
   margin-top: 50px;
   color: white;
+  font-size: calc(5px + 1vw);
+  line-height: 0;
 }
 .footer .socialLinks a {
   margin: 10px;
+  color: white;
 }
 .footer .socialLinks a i {
-  font-size: 60px;
+  font-size: calc(30px + 1vw);
 }
 
 @media (max-width: 1000px) {
+  nav .parent {
+    font-size: 12px;
+  }
+  nav .parent .child li {
+    width: 180px;
+  }
   footer {
     font-size: smaller;
+  }
+  footer h4 {
+    font-size: 20px;
+  }
+  footer .socialLinks {
+    width: 200px;
+    margin-left: 10px;
+  }
+  footer .socialLinks a i {
+    font-size: 20px;
   }
 }
 

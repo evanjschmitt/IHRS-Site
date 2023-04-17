@@ -99,10 +99,12 @@ $siteDarkBlue: #0069a5;
             margin-top: 20px;
             border-radius: 50px;
             padding: 12px;
+            color: white;
           }
         }
       }
     }
+
     .socialsBox {
       display: flex;
       align-items: center;
@@ -125,6 +127,7 @@ $siteDarkBlue: #0069a5;
           span {
             font-size: 30px;
             padding: 10px;
+            color: white;
           }
           a {
             text-decoration: none;
@@ -133,34 +136,34 @@ $siteDarkBlue: #0069a5;
       }
     }
 
-    .quickLinks{
+    .quickLinks {
       display: flex;
       align-items: center;
       justify-content: space-between;
       flex-direction: column;
-      .link{
+      .link {
         font-size: 20px;
-      display: flex;
-      text-align: center;
-      flex-direction: column;
-      padding: 10px;
-      a {
-        color: $siteBlue;
-      }
-      p {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
         padding: 10px;
-      }
-      span {
-        text-decoration: underline;
-        margin-top: 15px;
-      }
+        a {
+          color: $siteBlue;
+        }
+        p {
+          padding: 10px;
+        }
+        span {
+          text-decoration: underline;
+          margin-top: 15px;
+        }
       }
     }
   }
 }
 
 .ourMission {
-  height: 800px;
+  margin-bottom: 20px;
   display: flex;
   // align-items: center;
   justify-content: space-evenly;

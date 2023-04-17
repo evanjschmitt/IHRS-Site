@@ -1,0 +1,88 @@
+.app {
+  p,
+  li {
+    font-family: poppinsReg;
+    font-size: 20px;
+  }
+
+  li {
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-family: robotoSlab;
+    font-size: 50px;
+  }
+  span {
+    color: $siteBlue;
+  }
+  p {
+    font-family: poppinsReg;
+  }
+
+  h2 {
+    margin-top: 50px;
+    font-family: robotoSlab;
+    font-size: 35px;
+  }
+
+  .textSection {
+    width: 45%;
+    a {
+      color: $siteBlue;
+    }
+  }
+  img {
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 400px;
+  }
+
+  .section {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+  }
+  .soloSection {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    flex-direction: column;
+
+    .adoptablesButton {
+      margin-top: 100px;
+      margin-bottom: 75px;
+      a {
+        text-decoration: none;
+        span {
+          background-color: $siteBlue;
+          padding: 25px;
+          font-size: 25px;
+          border-radius: 25px;
+          margin-bottom: 75px;
+          color: white;
+          font-family: robotoSlabNormal;
+        }
+      }
+    }
+  }
+}
+
+//Media Queries//
+@media (max-width: 1230px) {
+  .section {
+    flex-direction: column;
+    .textSection {
+      width: 80%;
+    }
+  }
+}

@@ -1,6 +1,7 @@
 //Stylesheet imports//
 @import "home.scss";
 @import "fonts.scss";
+@import "adoption.scss";
 
 //Variables//
 $siteBlue: #4db1ea;
@@ -35,6 +36,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-family: poppinsReg;
   .homeButton {
     width: 80px;
     height: 20px;
@@ -47,13 +49,14 @@ nav {
   }
 
   .links {
-    margin-right: 50px;
+    margin-right: 20px;
     .parent {
       display: block;
       position: relative;
       float: left;
       line-height: 50px;
       background-color: $siteBlue;
+      margin-right: 10px;
       // border-right: #CCC 1px solid;
       // width:9%;
     }
@@ -70,6 +73,7 @@ nav {
     }
 
     .child {
+      
       display: none;
     }
 
@@ -77,13 +81,16 @@ nav {
       background-color: $siteBlue;
       line-height: 40px;
       color: white;
-      width: 200px;
+      width: 220px;
     }
 
     .child li a {
       color: white;
-      width: 100%;
+      // width: 200px;
       align-items: center;
+      display: block;
+      margin-top: 0;
+      margin-bottom: 0;
     }
 
     ul {
@@ -120,10 +127,12 @@ nav {
 //Footer Styling
 .footer {
   footer {
-    width: 95%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 50px;
+    padding: 10px;
   }
   height: 75px;
   background-color: $siteBlue;
@@ -133,24 +142,28 @@ nav {
   justify-content: space-evenly;
 
   .title {
-    font-size: 25px;
-    width: 200px;
+    font-size: 23px;
+    // width: 200px;
     margin-top: 10px;
     color: white;
     font-family: robotoSlab;
     margin-left: 20px;
+    line-height: 100%;
   }
   .copyright {
     font-family: robotoSlabNormal;
     margin-top: 50px;
     color: white;
+    font-size: calc(5px + 1vw);
+    line-height: 0;
   }
 
   .socialLinks {
     a {
       margin: 10px;
+      color: white;
       i {
-        font-size: 60px;
+        font-size: calc(30px + 1vw);
       }
     }
   }
@@ -158,9 +171,29 @@ nav {
 
 //Media Queries//
 @media (max-width: 1000px) {
+  nav {
+    .parent {
+      font-size: 12px;
+
+      .child li {
+        width: 180px;
+      }
+    }
+  }
+
   footer {
     font-size: smaller;
-  }
-  .socialLinks {
+    h4{
+      font-size: 20px;
+    }
+    .socialLinks {
+      width: 200px;
+      margin-left: 10px;
+      a {
+        i {
+          font-size: 20px;
+        }
+      }
+    }
   }
 }
