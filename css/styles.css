@@ -209,6 +209,10 @@
   src: url(../css/fonts/robotoSlab/RobotoSlab-Regular.ttf);
 }
 @font-face {
+  font-family: robotoSlabBold;
+  src: url(../css/fonts/robotoSlab/RobotoSlab-ExtraBold.ttf);
+}
+@font-face {
   font-family: poppinsReg;
   src: url(../css/fonts/poppins/Poppins-Regular.ttf);
 }
@@ -300,41 +304,42 @@
   font-size: 60px;
   text-align: center;
   margin-top: 30px;
+  margin-bottom: 50px;
 }
 .adoptables h1 span {
   color: #4db1ea;
 }
-.adoptables .adoptableProfile {
+.adoptables .profile {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   margin-bottom: 50px;
 }
-.adoptables .adoptableProfile h3 {
+.adoptables .profile h3 {
   font-family: robotoSlab;
   font-size: 40px;
 }
-.adoptables .adoptableProfile img {
+.adoptables .profile img {
   width: 250px;
   height: 250px;
   border-radius: 25px;
 }
-.adoptables .adoptableProfile p {
+.adoptables .profile p {
   font-family: poppinsReg;
   font-size: 20px;
 }
-.adoptables .adoptableProfile .left {
+.adoptables .profile .left {
   font-family: robotoSlabNormal;
 }
-.adoptables .adoptableProfile .left span {
+.adoptables .profile .left span {
   margin-right: 10px;
   color: #0069a5;
 }
-.adoptables .adoptableProfile .bio {
+.adoptables .profile .bio {
   width: 60%;
   margin: 0 auto;
 }
-.adoptables .adoptableProfile .bioButton {
+.adoptables .profile .bioButton {
   margin-top: 50px;
   margin-bottom: 75px;
   font-family: poppinsReg;
@@ -342,25 +347,92 @@
   align-items: center;
   justify-content: space-evenly;
 }
-.adoptables .adoptableProfile .bioButton span {
-  background-color: #4db1ea;
+.adoptables .profile .bioButton span {
+  background-color: #0069a5;
   padding: 25px;
   border-radius: 30px;
 }
-.adoptables .adoptableProfile .bioButton a {
+.adoptables .profile .bioButton a {
   text-decoration: none;
   color: white;
   font-size: 25px;
 }
 
-@media (max-width: 1000px) {
-  .adoptableProfile {
+.desc {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.desc .descText {
+  font-family: poppinsReg;
+  font-size: 20px;
+}
+.desc .descText .sponsorButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 75px;
+  margin-bottom: 100px;
+}
+.desc .descText .sponsorButton a {
+  text-decoration: none;
+}
+.desc .descText .sponsorButton span {
+  background-color: #0069a5;
+  padding: 20px;
+  border-radius: 25px;
+  color: white;
+}
+.desc .descText .sponsorButton span i {
+  margin-right: 10px;
+}
+.desc img {
+  border-radius: 50%;
+}
+
+@media (max-width: 1200px) {
+  .profile {
     flex-direction: column;
   }
-  .adoptableProfile .left {
+  .profile .left {
     margin-bottom: 25px;
   }
 }
+.questionnaire {
+  width: 80%;
+  margin: 0 auto;
+}
+.questionnaire .note {
+  display: flex;
+  margin: auto;
+}
+.questionnaire .note span {
+  color: #4db1ea;
+  font-family: robotoSlabBold;
+  font-size: 25px;
+  margin-right: 20px;
+  margin-top: -2px;
+}
+.questionnaire h1 {
+  font-family: robotoSlab;
+  font-size: 50px;
+  margin-top: 25px;
+}
+.questionnaire h1 span {
+  color: #4db1ea;
+}
+.questionnaire h2 {
+  font-family: robotoSlab;
+  font-size: 30px;
+  margin-top: 25px;
+}
+.questionnaire p {
+  font-family: poppinsReg;
+  font-size: 20px;
+}
+
 * {
   margin: 0;
   padding: 0;

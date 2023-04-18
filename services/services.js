@@ -4,7 +4,7 @@ export function changeRoutes() {
     let pageID = hashTag.replace("#", "");
   
     if (pageID != "") {
-      $.get(`${pageID}.html`, function (data) {
+      $.get(`pages/${pageID}.html`, function (data) {
         // console.log("data" + data);
         $("#app").html(data);
       });

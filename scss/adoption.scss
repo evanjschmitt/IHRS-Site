@@ -1,3 +1,4 @@
+//Adoption Homepage Styling//
 .adoption {
   p,
   li {
@@ -76,7 +77,6 @@
     }
   }
 }
-
 //Adoption Media Queries//
 @media (max-width: 1230px) {
   .section {
@@ -87,6 +87,7 @@
   }
 }
 
+//Adoptables Styling//
 .adoptables {
   width: 70%;
   margin: 0 auto;
@@ -96,17 +97,18 @@
     font-size: 60px;
     text-align: center;
     margin-top: 30px;
+    margin-bottom: 50px;
     span {
       color: $siteBlue;
     }
   }
 
-  .adoptableProfile {
+  .profile {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     margin-bottom: 50px;
-    
+
     h3 {
       font-family: robotoSlab;
       font-size: 40px;
@@ -115,18 +117,18 @@
       width: 250px;
       height: 250px;
       border-radius: 25px;
+      // border-radius: 50%;
     }
     p {
       font-family: poppinsReg;
       font-size: 20px;
     }
 
-    .left{
+    .left {
       font-family: robotoSlabNormal;
-      span{
+      span {
         margin-right: 10px;
         color: $siteDarkBlue;
-        
       }
     }
     .bio {
@@ -142,7 +144,7 @@
       justify-content: space-evenly;
 
       span {
-        background-color: $siteBlue;
+        background-color: $siteDarkBlue;
         padding: 25px;
         border-radius: 30px;
       }
@@ -154,12 +156,82 @@
     }
   }
 }
+//Sanctuary Styling//
+.desc {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 
-@media (max-width: 1000px) {
-  .adoptableProfile{
+  .descText {
+    font-family: poppinsReg;
+    font-size: 20px;
+    .sponsorButton {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin-top: 75px;
+      margin-bottom: 100px;
+      a {
+        text-decoration: none;
+      }
+      span {
+        background-color: $siteDarkBlue;
+        padding: 20px;
+        border-radius: 25px;
+        color: white;
+        i {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  img {
+    border-radius: 50%;
+  }
+}
+
+//Adoptables + Sancuary MQ//
+@media (max-width: 1200px) {
+  .profile {
     flex-direction: column;
-    .left{
+    .left {
       margin-bottom: 25px;
     }
+  }
+}
+
+//Questionnaire Styling//
+.questionnaire {
+  width: 80%;
+  margin: 0 auto;
+  .note {
+    display: flex;
+    margin: auto;
+    span {
+      color: $siteBlue;
+      font-family: robotoSlabBold;
+      font-size: 25px;
+      margin-right: 20px;
+      margin-top: -2px;
+    }
+  }
+  h1 {
+    font-family: robotoSlab;
+    font-size: 50px;
+    margin-top: 25px;
+    span {
+      color: $siteBlue;
+    }
+  }
+  h2 {
+    font-family: robotoSlab;
+    font-size: 30px;
+    margin-top: 25px;
+  }
+  p {
+    font-family: poppinsReg;
+    font-size: 20px;
   }
 }
