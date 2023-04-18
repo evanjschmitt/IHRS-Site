@@ -46,6 +46,7 @@
   justify-content: space-evenly;
   margin: auto;
   padding: 20px;
+  margin-bottom: 20px;
 }
 .threeBoxes .box {
   height: 450px;
@@ -149,7 +150,7 @@
 }
 
 .ourMission {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   display: flex;
   justify-content: space-evenly;
 }
@@ -211,42 +212,42 @@
   font-family: poppinsReg;
   src: url(../css/fonts/poppins/Poppins-Regular.ttf);
 }
-.app p,
-.app li {
+.adoption p,
+.adoption li {
   font-family: poppinsReg;
   font-size: 20px;
 }
-.app li {
+.adoption li {
   margin-left: 20px;
   margin-bottom: 10px;
 }
-.app h1 {
+.adoption h1 {
   font-family: robotoSlab;
   font-size: 50px;
 }
-.app span {
+.adoption span {
   color: #4db1ea;
 }
-.app p {
+.adoption p {
   font-family: poppinsReg;
 }
-.app h2 {
+.adoption h2 {
   margin-top: 50px;
   font-family: robotoSlab;
   font-size: 35px;
 }
-.app .textSection {
+.adoption .textSection {
   width: 45%;
 }
-.app .textSection a {
+.adoption .textSection a {
   color: #4db1ea;
 }
-.app img {
+.adoption img {
   border-radius: 20px;
   margin-top: 20px;
   width: 400px;
 }
-.app .section {
+.adoption .section {
   width: 80%;
   margin: auto;
   margin-bottom: 20px;
@@ -255,7 +256,7 @@
   justify-content: space-evenly;
   margin-top: 20px;
 }
-.app .soloSection {
+.adoption .soloSection {
   width: 100%;
   margin: auto;
   margin-bottom: 20px;
@@ -265,14 +266,14 @@
   margin-top: 20px;
   flex-direction: column;
 }
-.app .soloSection .adoptablesButton {
+.adoption .soloSection .adoptablesButton {
   margin-top: 100px;
   margin-bottom: 75px;
 }
-.app .soloSection .adoptablesButton a {
+.adoption .soloSection .adoptablesButton a {
   text-decoration: none;
 }
-.app .soloSection .adoptablesButton a span {
+.adoption .soloSection .adoptablesButton a span {
   background-color: #4db1ea;
   padding: 25px;
   font-size: 25px;
@@ -288,6 +289,76 @@
   }
   .section .textSection {
     width: 80%;
+  }
+}
+.adoptables {
+  width: 70%;
+  margin: 0 auto;
+}
+.adoptables h1 {
+  font-family: robotoSlab;
+  font-size: 60px;
+  text-align: center;
+  margin-top: 30px;
+}
+.adoptables h1 span {
+  color: #4db1ea;
+}
+.adoptables .adoptableProfile {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+}
+.adoptables .adoptableProfile h3 {
+  font-family: robotoSlab;
+  font-size: 40px;
+}
+.adoptables .adoptableProfile img {
+  width: 250px;
+  height: 250px;
+  border-radius: 25px;
+}
+.adoptables .adoptableProfile p {
+  font-family: poppinsReg;
+  font-size: 20px;
+}
+.adoptables .adoptableProfile .left {
+  font-family: robotoSlabNormal;
+}
+.adoptables .adoptableProfile .left span {
+  margin-right: 10px;
+  color: #0069a5;
+}
+.adoptables .adoptableProfile .bio {
+  width: 60%;
+  margin: 0 auto;
+}
+.adoptables .adoptableProfile .bioButton {
+  margin-top: 50px;
+  margin-bottom: 75px;
+  font-family: poppinsReg;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.adoptables .adoptableProfile .bioButton span {
+  background-color: #4db1ea;
+  padding: 25px;
+  border-radius: 30px;
+}
+.adoptables .adoptableProfile .bioButton a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+}
+
+@media (max-width: 1000px) {
+  .adoptableProfile {
+    flex-direction: column;
+  }
+  .adoptableProfile .left {
+    margin-bottom: 25px;
   }
 }
 * {

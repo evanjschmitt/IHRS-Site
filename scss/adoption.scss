@@ -1,4 +1,4 @@
-.app {
+.adoption {
   p,
   li {
     font-family: poppinsReg;
@@ -77,12 +77,89 @@
   }
 }
 
-//Media Queries//
+//Adoption Media Queries//
 @media (max-width: 1230px) {
   .section {
     flex-direction: column;
     .textSection {
       width: 80%;
+    }
+  }
+}
+
+.adoptables {
+  width: 70%;
+  margin: 0 auto;
+
+  h1 {
+    font-family: robotoSlab;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 30px;
+    span {
+      color: $siteBlue;
+    }
+  }
+
+  .adoptableProfile {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+    
+    h3 {
+      font-family: robotoSlab;
+      font-size: 40px;
+    }
+    img {
+      width: 250px;
+      height: 250px;
+      border-radius: 25px;
+    }
+    p {
+      font-family: poppinsReg;
+      font-size: 20px;
+    }
+
+    .left{
+      font-family: robotoSlabNormal;
+      span{
+        margin-right: 10px;
+        color: $siteDarkBlue;
+        
+      }
+    }
+    .bio {
+      width: 60%;
+      margin: 0 auto;
+    }
+    .bioButton {
+      margin-top: 50px;
+      margin-bottom: 75px;
+      font-family: poppinsReg;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+      span {
+        background-color: $siteBlue;
+        padding: 25px;
+        border-radius: 30px;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .adoptableProfile{
+    flex-direction: column;
+    .left{
+      margin-bottom: 25px;
     }
   }
 }
