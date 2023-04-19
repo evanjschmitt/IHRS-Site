@@ -415,6 +415,36 @@
   margin-right: 20px;
   margin-top: -2px;
 }
+.questionnaire .form {
+  margin: 0 auto;
+  border: solid 2px #0069a5;
+  border-radius: 20px;
+  padding: 40px;
+  margin-bottom: 30px;
+}
+.questionnaire .form h2 {
+  font-size: 40px;
+  margin-top: -10px;
+}
+.questionnaire .form h3 {
+  font-family: robotoSlab;
+  font-size: 25px;
+  margin-top: 25px;
+}
+.questionnaire .form textarea {
+  margin-right: 50px;
+  height: 35px;
+  font-size: 20px;
+  font-family: poppinsReg;
+}
+.questionnaire .form .multipleInput {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.questionnaire .form .row textarea {
+  width: 100%;
+}
 .questionnaire h1 {
   font-family: robotoSlab;
   font-size: 50px;

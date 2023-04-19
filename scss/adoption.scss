@@ -217,6 +217,40 @@
       margin-top: -2px;
     }
   }
+  .form {
+    margin: 0 auto;
+    border: solid 2px $siteDarkBlue;
+    border-radius: 20px;
+    padding: 40px;
+    margin-bottom: 30px;
+    h2 {
+      font-size: 40px;
+      margin-top: -10px;
+    }
+    h3 {
+      font-family: robotoSlab;
+      font-size: 25px;
+      margin-top: 25px;
+    }
+    textarea {
+      margin-right: 50px;
+      height: 35px;
+      font-size: 20px;
+      font-family: poppinsReg;
+    }
+    .multipleInput {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      
+    }
+    .row {
+      textarea {
+        width: 100%;
+      }
+    }
+  }
+
   h1 {
     font-family: robotoSlab;
     font-size: 50px;
