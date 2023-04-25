@@ -202,6 +202,67 @@
   }
 }
 
+//Rabbit Bio Page Styling//
+.rabbitBio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  width: 90%;
+  margin: auto;
+  margin-top: 25px;
+  min-height: calc(89% - 60px);
+
+  h4{
+    font-family: robotoSlab;
+    font-size: 25px;
+  }
+
+  h3 {
+    font-family: robotoSlab;
+    font-size: 40px;
+    color: $siteDarkBlue;
+  }
+  img {
+    width: 250px;
+    height: 250px;
+    border-radius: 25px;
+    // border-radius: 50%;
+  }
+  p {
+    font-family: poppinsReg;
+    font-size: 20px;
+  }
+  .bio {
+    width: 50%;
+    margin: 0 auto;
+    padding: 30px;
+  }
+  .images {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    img {
+      
+      margin: 20px;
+    }
+  }
+}
+
+//Rabbit Bio MQ//
+@media (max-width: 1200px) {
+  .rabbitBio{
+    flex-direction: column;
+    .bio{
+        width: 80%;
+    }
+    .images{
+      flex-direction: row;
+    }
+  }
+}
+
 //Questionnaire Styling//
 .questionnaire {
   width: 80%;
@@ -242,7 +303,6 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      
     }
     .row {
       textarea {

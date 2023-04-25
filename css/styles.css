@@ -400,6 +400,60 @@
     margin-bottom: 25px;
   }
 }
+.rabbitBio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  width: 90%;
+  margin: auto;
+  margin-top: 25px;
+  min-height: calc(89% - 60px);
+}
+.rabbitBio h4 {
+  font-family: robotoSlab;
+  font-size: 25px;
+}
+.rabbitBio h3 {
+  font-family: robotoSlab;
+  font-size: 40px;
+  color: #0069a5;
+}
+.rabbitBio img {
+  width: 250px;
+  height: 250px;
+  border-radius: 25px;
+}
+.rabbitBio p {
+  font-family: poppinsReg;
+  font-size: 20px;
+}
+.rabbitBio .bio {
+  width: 50%;
+  margin: 0 auto;
+  padding: 30px;
+}
+.rabbitBio .images {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.rabbitBio .images img {
+  margin: 20px;
+}
+
+@media (max-width: 1200px) {
+  .rabbitBio {
+    flex-direction: column;
+  }
+  .rabbitBio .bio {
+    width: 80%;
+  }
+  .rabbitBio .images {
+    flex-direction: row;
+  }
+}
 .questionnaire {
   width: 80%;
   margin: 0 auto;
