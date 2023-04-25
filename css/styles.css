@@ -299,6 +299,9 @@
   width: 70%;
   margin: 0 auto;
 }
+.adoptables .special {
+  color: #0069a5;
+}
 .adoptables h1 {
   font-family: robotoSlab;
   font-size: 60px;
@@ -323,6 +326,7 @@
   width: 250px;
   height: 250px;
   border-radius: 25px;
+  object-fit: cover;
 }
 .adoptables .profile p {
   font-family: poppinsReg;
@@ -335,8 +339,12 @@
   margin-right: 10px;
   color: #0069a5;
 }
+.adoptables .profile .left .info {
+  margin-top: 20px;
+  margin-left: 10px;
+}
 .adoptables .profile .bio {
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
 }
 .adoptables .profile .bioButton {
@@ -423,6 +431,7 @@
   width: 250px;
   height: 250px;
   border-radius: 25px;
+  object-fit: cover;
 }
 .rabbitBio p {
   font-family: poppinsReg;
