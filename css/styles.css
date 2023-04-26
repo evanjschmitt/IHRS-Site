@@ -172,12 +172,13 @@
   margin-left: 20px;
 }
 .ourMission .logo {
-  background-image: url(../css/rabbitAssets/icons/newLogo.png);
-  height: 500px;
-  width: 500px;
+  background-image: url(../css/rabbitAssets/icons/EvLogoDesign.png);
+  height: 400px;
+  width: 400px;
   background-size: contain;
   background-repeat: no-repeat;
   padding: 20px;
+  margin-top: 50px;
 }
 
 @media (max-width: 1200px) {
@@ -188,8 +189,17 @@
     margin-bottom: 25px;
     width: 400px;
   }
+  .ourMission {
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+  }
+  .ourMission .missionStatement {
+    width: 100%;
+  }
   .ourMission .logo {
-    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 50px;
   }
 }
 @font-face {
@@ -302,6 +312,9 @@
 .adoptables .special {
   color: #0069a5;
 }
+.adoptables .special p {
+  font-size: 250px;
+}
 .adoptables h1 {
   font-family: robotoSlab;
   font-size: 60px;
@@ -317,6 +330,9 @@
   align-items: center;
   justify-content: space-evenly;
   margin-bottom: 50px;
+  border: 5px solid #0069a5;
+  border-radius: 20px;
+  padding: 25px;
 }
 .adoptables .profile h3 {
   font-family: robotoSlab;
@@ -346,6 +362,8 @@
 .adoptables .profile .bio {
   width: 70%;
   margin: 0 auto;
+  margin-top: 20px;
+  min-height: 200px;
 }
 .adoptables .profile .bioButton {
   margin-top: 50px;
@@ -373,16 +391,21 @@
   align-items: center;
   justify-content: space-evenly;
 }
+.desc img {
+  width: 200px;
+  margin-top: -150px;
+  margin-left: 25px;
+}
 .desc .descText {
   font-family: poppinsReg;
   font-size: 20px;
 }
 .desc .descText .sponsorButton {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  margin: 0 auto;
   margin-top: 75px;
   margin-bottom: 100px;
+  margin-right: 100px;
+  width: 400px;
 }
 .desc .descText .sponsorButton a {
   text-decoration: none;
@@ -406,6 +429,9 @@
   }
   .profile .left {
     margin-bottom: 25px;
+  }
+  .desc {
+    margin-bottom: 200px;
   }
 }
 .rabbitBio {

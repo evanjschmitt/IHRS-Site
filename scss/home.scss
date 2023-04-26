@@ -186,12 +186,13 @@ $siteDarkBlue: #0069a5;
     }
   }
   .logo {
-    background-image: url(../css/rabbitAssets/icons/newLogo.png);
-    height: 500px;
-    width: 500px;
+    background-image: url(../css/rabbitAssets/icons/EvLogoDesign.png);
+    height: 400px;
+    width: 400px;
     background-size: contain;
     background-repeat: no-repeat;
     padding: 20px;
+    margin-top: 50px;
   }
 }
 
@@ -205,8 +206,15 @@ $siteDarkBlue: #0069a5;
     }
   }
   .ourMission {
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    .missionStatement {
+      width: 100%;
+    }
     .logo {
-      width: 300px;
+      margin: 0 auto;
+      margin-bottom: 50px;
     }
   }
 }

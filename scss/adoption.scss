@@ -94,6 +94,9 @@
 
   .special{
     color: $siteDarkBlue;
+    p{
+      font-size: 250px;
+    }
   }
 
   h1 {
@@ -112,6 +115,10 @@
     align-items: center;
     justify-content: space-evenly;
     margin-bottom: 50px;
+    // max-height: 700px;
+    border: 5px solid $siteDarkBlue;
+    border-radius: 20px;
+    padding: 25px;
 
     h3 {
       font-family: robotoSlab;
@@ -144,6 +151,8 @@
     .bio {
       width: 70%;
       margin: 0 auto;
+      margin-top: 20px;
+      min-height: 200px;
     }
     .bioButton {
       margin-top: 50px;
@@ -173,16 +182,23 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  img{
+    width: 200px;
+    margin-top: -150px;
+    margin-left: 25px;
+  }
 
   .descText {
     font-family: poppinsReg;
     font-size: 20px;
+    
     .sponsorButton {
-      display: flex;
-      align-items: center;
-      justify-content: space-evenly;
+      margin: 0 auto;
       margin-top: 75px;
       margin-bottom: 100px;
+      margin-right: 100px;
+      width: 400px;
+      // margin:;
       a {
         text-decoration: none;
       }
@@ -209,6 +225,9 @@
     .left {
       margin-bottom: 25px;
     }
+  }
+  .desc{
+    margin-bottom: 200px;
   }
 }
 
