@@ -77,7 +77,7 @@ export function sanctuaryLoop() {
           <p>${rabbit.bio}</p>
         </div>
         <div class="bioButton">
-          <a href="#rabbitBio"><span>View My Bio!</span></a>
+          <a href="#sanctuaryBio"><span>View My Bio!</span></a>
         </div>
       </div>
     </div>`);

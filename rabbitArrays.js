@@ -510,13 +510,17 @@ export var SANCTUARY = [
   },
 
   {
-    name: "Armand",
-    image: "css/rabbitAssets/sanctuaryImages/Armand.png",
-    breed: "Californian Mix",
-    sex: "Male",
-    age: "7 Years, 1 Month",
-    weight: "6.6 Pounds",
-    bio: "My name is Armand. I came to Indiana after escaping floods in Louisiana! <br> <br> I'm a very easygoing bunny and I enjoy house rabbit life! I love, love, love to be petted. You can pet me all day. I'm also a big fan of my daily salad and chowing on lots of hay! <br> <br> During play time I like to do binkies, and during rest time I stretch out and enjoy some sun coming in the window. <br> <br> The doctors have been unable to find the source of my GI troubles, I have had a LOT of tests! My foster mom does not mind the extra work and mess ;)",
+    name: "Curly",
+    image: "css/rabbitAssets/sanctuaryImages/Curly.png",
+    breed: "Mix",
+    sex: "Female",
+    age: "6 Years, 2 Months",
+    weight: "4.7 Pounds",
+    bio: "Curly was found as a stray in Greenwood, very skinny and with eye infection. She was turned into an Indiana shelter, who helped get her weight back up and treated her eyes. But Curly was kind of stuck at the shelter... they didn't have a spay/neuter connection, and Curly was getting cranky about being there. IHRS came in to take Curly to rescue after care after she'd been at the shelter a couple of months. One thing we discovered while at the shelter: Curly had terribly maloccluded incisors! <br> <br> Curly had to learn to eat different kinds of food post her dental surgeries. She has trouble with grooming because she does not have teeth to help with that task. Her foster home helps her with this and Curly is good with cleaning as best she can with her tongue! The extent of her issues is so severe, her veterinarian feels she should remain in sanctuary status. She has an unknown prognosis overall and needs a very special caregiver with access to a great rabbit vet. We are supporting Curly with special foods and when she has recurrent dental/facial/eye infections she receives antibiotics and surgical correction. <br> <br> Curly is an incredibly happy bunny, especially because she is bonded to her best friend Violet, another special needs bunny! Violet and Curly snuggle a lot. We do have to separate them at mealtimes since Curly is very slow to chew her soft pellets and Violet tries to steal them all, but otherwise they spend all their time together. We are so happy they have found each other for comfort and friendship even though they both have serious health needs.",
+
+   
+    
+    
   },
 
   {
