@@ -1,0 +1,141 @@
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  .header {
+    // width: 50%;
+    margin-left: 200px;
+    margin-bottom: 50px;
+    margin-top: -500px;
+    padding: 20px;
+    h1 {
+      font-family: robotoSlabBold;
+      color: $siteDarkBlue;
+      margin-top: 20px;
+      font-size: 40px;
+    }
+    h3 {
+      font-family: poppinsReg;
+      font-size: 20px;
+    }
+    ul {
+      margin-left: 20px;
+      font-family: poppinsReg;
+    }
+  }
+
+  .form {
+    border: 2px solid $siteDarkBlue;
+    padding: 20px;
+    border-radius: 20px;
+    width: 50%;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    margin-top: 100px;
+    h1 {
+      font-family: robotoSlab;
+      margin-bottom: 30px;
+    }
+    p {
+      font-family: poppinsReg;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+    input {
+      //   width: 70%;
+      font-family: poppinsReg;
+      margin-bottom: 20px;
+      height: 25px;
+    }
+    select {
+      padding-top: -20px;
+      min-width: 250px;
+      margin-bottom: 20px;
+      height: 25px;
+      font-size: 20px;
+      option {
+        font-size: 18px;
+      }
+    }
+    textarea {
+      margin-bottom: 20px;
+      width: 100%;
+      font-family: poppinsReg;
+      font-size: 20px;
+    }
+    .captcha {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    .row {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      margin: auto;
+    }
+    .button {
+      margin-top: 60px;
+      margin-bottom: 50px;
+      font-family: poppinsReg;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      button {
+        padding: 20px;
+        background-color: $siteDarkBlue;
+        border: none;
+        width: 200px;
+        border-radius: 20px;
+        a {
+          text-decoration: none;
+          color: white;
+          font-family: poppinsReg;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+//Contact Page MQ//
+@media (max-width: 1200px) {
+  .contact {
+    flex-direction: column;
+    .form {
+        width: 80%;
+        margin:0 auto;
+        margin-top: 80px;
+        margin-bottom: 50px;
+    }
+  }
+}
+
+//Submitted Page Styling//
+.submit {
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 770px;
+
+  h1 {
+    font-family: robotoSlabBold;
+    font-size: 30px;
+    color: $siteDarkBlue;
+    font-size: 40px;
+  }
+  h2 {
+    font-family: poppinsReg;
+
+    a {
+      color: $siteBlue;
+    }
+  }
+  img {
+    width: 300px;
+  }
+}

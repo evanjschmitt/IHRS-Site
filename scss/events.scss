@@ -1,0 +1,123 @@
+.events {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+  h1 {
+    color: $siteDarkBlue;
+    font-family: robotoSlab;
+    font-size: 40px;
+  }
+  .calendar {
+    margin-bottom: 50px;
+    .headers {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      .header {
+        width: 200px;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      display: flex;
+      align-items: center;
+
+      background-color: $siteDarkBlue;
+      color: white;
+      padding-top: 10px;
+      border-radius: 20px 20px 0px 0px;
+      p {
+        font-family: robotoSlabNormal;
+        // border: 2px solid white;
+      }
+    }
+    .week {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      .day {
+        width: 14.5%;
+        height: 200px;
+        border: 2px solid $siteDarkBlue;
+        h4 {
+          font-size: 25px;
+          font-family: poppinsReg;
+          padding: 10px;
+        }
+        ul {
+          margin-left: 25px;
+          li {
+            font-family: poppinsReg;
+            padding-right: 10px;
+            a {
+              text-decoration: none;
+              span {
+                color: $siteBlue;
+              }
+            }
+            a:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      .empty {
+        background-color: $siteBlue;
+      }
+    }
+  }
+}
+
+//Events MQ//
+@media (max-width: 1100px) {
+  .day {
+    height: 100px;
+    li {
+      font-size: 12px;
+    }
+  }
+}
+
+//Event Page Styling//
+.eventPage {
+  width: 80%;
+  margin: 0 auto;
+
+  height: calc(848px - 110px);
+  .content {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    .text {
+      padding: 25px;
+      h1 {
+        font-family: robotoSlab;
+      }
+      p {
+        font-size: 20px;
+        font-family: poppinsReg;
+        a {
+          color: $siteBlue;
+          text-decoration: none;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    img {
+      max-width: 500px;
+      border: 2px solid $siteDarkBlue;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .eventPage {
+    .content {
+      img {
+        max-width: 250px;
+      }
+    }
+  }
+}

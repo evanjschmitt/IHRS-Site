@@ -552,6 +552,335 @@
   font-size: 20px;
 }
 
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.contact .header {
+  margin-left: 200px;
+  margin-bottom: 50px;
+  margin-top: -500px;
+  padding: 20px;
+}
+.contact .header h1 {
+  font-family: robotoSlabBold;
+  color: #0069a5;
+  margin-top: 20px;
+  font-size: 40px;
+}
+.contact .header h3 {
+  font-family: poppinsReg;
+  font-size: 20px;
+}
+.contact .header ul {
+  margin-left: 20px;
+  font-family: poppinsReg;
+}
+.contact .form {
+  border: 2px solid #0069a5;
+  padding: 20px;
+  border-radius: 20px;
+  width: 50%;
+  margin-right: 100px;
+  margin-bottom: 50px;
+  margin-top: 100px;
+}
+.contact .form h1 {
+  font-family: robotoSlab;
+  margin-bottom: 30px;
+}
+.contact .form p {
+  font-family: poppinsReg;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.contact .form input {
+  font-family: poppinsReg;
+  margin-bottom: 20px;
+  height: 25px;
+}
+.contact .form select {
+  padding-top: -20px;
+  min-width: 250px;
+  margin-bottom: 20px;
+  height: 25px;
+  font-size: 20px;
+}
+.contact .form select option {
+  font-size: 18px;
+}
+.contact .form textarea {
+  margin-bottom: 20px;
+  width: 100%;
+  font-family: poppinsReg;
+  font-size: 20px;
+}
+.contact .form .captcha {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.contact .form .row {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+}
+.contact .form .button {
+  margin-top: 60px;
+  margin-bottom: 50px;
+  font-family: poppinsReg;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.contact .form .button button {
+  padding: 20px;
+  background-color: #0069a5;
+  border: none;
+  width: 200px;
+  border-radius: 20px;
+}
+.contact .form .button button a {
+  text-decoration: none;
+  color: white;
+  font-family: poppinsReg;
+  font-size: 20px;
+}
+
+@media (max-width: 1200px) {
+  .contact {
+    flex-direction: column;
+  }
+  .contact .form {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 50px;
+  }
+}
+.submit {
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 770px;
+}
+.submit h1 {
+  font-family: robotoSlabBold;
+  font-size: 30px;
+  color: #0069a5;
+  font-size: 40px;
+}
+.submit h2 {
+  font-family: poppinsReg;
+}
+.submit h2 a {
+  color: #4db1ea;
+}
+.submit img {
+  width: 300px;
+}
+
+.events {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.events h1 {
+  color: #0069a5;
+  font-family: robotoSlab;
+  font-size: 40px;
+}
+.events .calendar {
+  margin-bottom: 50px;
+}
+.events .calendar .headers {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+  background-color: #0069a5;
+  color: white;
+  padding-top: 10px;
+  border-radius: 20px 20px 0px 0px;
+}
+.events .calendar .headers .header {
+  width: 200px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.events .calendar .headers p {
+  font-family: robotoSlabNormal;
+}
+.events .calendar .week {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.events .calendar .week .day {
+  width: 14.5%;
+  height: 200px;
+  border: 2px solid #0069a5;
+}
+.events .calendar .week .day h4 {
+  font-size: 25px;
+  font-family: poppinsReg;
+  padding: 10px;
+}
+.events .calendar .week .day ul {
+  margin-left: 25px;
+}
+.events .calendar .week .day ul li {
+  font-family: poppinsReg;
+  padding-right: 10px;
+}
+.events .calendar .week .day ul li a {
+  text-decoration: none;
+}
+.events .calendar .week .day ul li a span {
+  color: #4db1ea;
+}
+.events .calendar .week .day ul li a:hover {
+  text-decoration: underline;
+}
+.events .calendar .week .empty {
+  background-color: #4db1ea;
+}
+
+@media (max-width: 1100px) {
+  .day {
+    height: 100px;
+  }
+  .day li {
+    font-size: 12px;
+  }
+}
+.eventPage {
+  width: 80%;
+  margin: 0 auto;
+  height: 738px;
+}
+.eventPage .content {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.eventPage .content .text {
+  padding: 25px;
+}
+.eventPage .content .text h1 {
+  font-family: robotoSlab;
+}
+.eventPage .content .text p {
+  font-size: 20px;
+  font-family: poppinsReg;
+}
+.eventPage .content .text p a {
+  color: #4db1ea;
+  text-decoration: none;
+}
+.eventPage .content .text p a:hover {
+  text-decoration: underline;
+}
+.eventPage .content img {
+  max-width: 500px;
+  border: 2px solid #0069a5;
+}
+
+@media (max-width: 1200px) {
+  .eventPage .content img {
+    max-width: 250px;
+  }
+}
+.wrapper {
+  height: 768px;
+}
+.wrapper .logIn {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.wrapper .logIn .form {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background-color: #4db1ea;
+  padding: 20px;
+  border-radius: 25px;
+  width: 300px;
+}
+.wrapper .logIn .form input {
+  margin-top: 20px;
+  font-family: poppinsReg;
+  width: 200px;
+  padding: 5px;
+  border-radius: 20px;
+}
+.wrapper .logIn h1 {
+  font-family: robotoSlab;
+}
+.wrapper .logIn p {
+  font-family: poppinsReg;
+  size: 20px;
+}
+.wrapper .button {
+  margin-top: 50px;
+  font-family: poppinsReg;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.wrapper .button button {
+  padding: 10px;
+  background-color: #0069a5;
+  border: none;
+  width: 200px;
+  border-radius: 20px;
+}
+.wrapper .button button a {
+  text-decoration: none;
+  color: white;
+  font-family: poppinsReg;
+  font-size: 20px;
+}
+
+.loggedIn {
+  width: 80%;
+  margin: 0 auto;
+  height: 758px;
+}
+.loggedIn h1 {
+  color: #0069a5;
+  font-family: robotoSlab;
+  margin-top: 40px;
+}
+.loggedIn p {
+  font-family: poppinsReg;
+  font-size: 20px;
+}
+.loggedIn p span {
+  font-family: robotoSlabBold;
+  color: darkred;
+}
+.loggedIn .crab {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.loggedIn img {
+  width: 500px;
+}
+
 * {
   margin: 0;
   padding: 0;
