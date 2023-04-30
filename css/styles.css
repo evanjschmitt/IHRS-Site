@@ -16,6 +16,7 @@
   font-size: 80px;
   font-family: robotoSlab;
   width: 800px;
+  color: white;
 }
 .hero .heroText h3 {
   font-size: 30px;
@@ -27,16 +28,50 @@
   color: #4db1ea;
 }
 
-.slideShow {
-  height: 400px;
-  max-width: 75%;
-  margin: auto;
-  background-color: red;
-  margin-bottom: 40px;
+.rotd {
+  background-color: white;
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  border: 2px solid #0069a5;
+  border-radius: 25px;
 }
-.slideShow img {
-  width: 500px;
-  height: 500px;
+.rotd .text {
+  width: 45%;
+  padding: 20px;
+}
+.rotd .text h3 {
+  margin-bottom: 100px;
+}
+.rotd .rabbitPic {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+.rotd .rabbitPic img {
+  border-radius: 25px;
+}
+.rotd h3 {
+  font-family: robotoSlab;
+  font-size: 40px;
+}
+.rotd p {
+  font-family: poppinsReg;
+  font-size: 20px;
+}
+.rotd a {
+  text-decoration: none;
+}
+.rotd a span {
+  color: white;
+  color: #4db1ea;
+}
+.rotd a:hover {
+  text-decoration: underline;
+  color: #4db1ea;
 }
 
 .threeBoxes {
@@ -47,12 +82,13 @@
   margin: auto;
   padding: 20px;
   margin-bottom: 20px;
+  background-color: white;
 }
 .threeBoxes .box {
   height: 450px;
   width: calc(300px + 1vw);
   min-width: 300px;
-  border: black 2px solid;
+  border: #0069a5 3px solid;
   border-radius: 10px;
 }
 .threeBoxes .box h3 {
@@ -141,15 +177,9 @@
 .threeBoxes .box .quickLinks .link a {
   color: #4db1ea;
 }
-.threeBoxes .box .quickLinks .link p {
-  padding: 10px;
-}
-.threeBoxes .box .quickLinks .link span {
-  text-decoration: underline;
-  margin-top: 15px;
-}
 
 .ourMission {
+  background-color: white;
   margin-bottom: 40px;
   display: flex;
   justify-content: space-evenly;
@@ -182,6 +212,13 @@
 }
 
 @media (max-width: 1200px) {
+  .rotd {
+    flex-direction: column;
+    width: 80%;
+  }
+  .rotd .text {
+    width: 90%;
+  }
   .threeBoxes {
     flex-direction: column;
   }
@@ -225,6 +262,10 @@
 @font-face {
   font-family: poppinsReg;
   src: url(../css/fonts/poppins/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: poppinsBold;
+  src: url(../css/fonts/poppins/Poppins-SemiBold.ttf);
 }
 .adoption p,
 .adoption li {
@@ -431,7 +472,7 @@
     margin-bottom: 25px;
   }
   .desc {
-    margin-bottom: 200px;
+    margin-bottom: 50px;
   }
 }
 .rabbitBio {
@@ -599,13 +640,15 @@
   font-family: poppinsReg;
   margin-bottom: 20px;
   height: 25px;
+  padding-left: 5px;
+  font-size: 18px;
 }
 .contact .form select {
   padding-top: -20px;
   min-width: 250px;
   margin-bottom: 20px;
   height: 25px;
-  font-size: 20px;
+  font-size: 18px;
 }
 .contact .form select option {
   font-size: 18px;
@@ -614,12 +657,14 @@
   margin-bottom: 20px;
   width: 100%;
   font-family: poppinsReg;
-  font-size: 20px;
+  font-size: 18px;
+  padding-left: 5px;
 }
 .contact .form .captcha {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  margin-top: 20px;
 }
 .contact .form .row {
   display: flex;
@@ -629,7 +674,7 @@
 }
 .contact .form .button {
   margin-top: 60px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-family: poppinsReg;
   display: flex;
   align-items: center;
@@ -653,10 +698,13 @@
   .contact {
     flex-direction: column;
   }
+  .contact .header {
+    display: none;
+  }
   .contact .form {
     width: 80%;
     margin: 0 auto;
-    margin-top: 80px;
+    margin-top: 30px;
     margin-bottom: 50px;
   }
 }
@@ -758,6 +806,8 @@
   }
   .day li {
     font-size: 12px;
+    margin-top: -15px;
+    padding-bottom: 5px;
   }
 }
 .eventPage {
@@ -902,6 +952,11 @@ p {
   margin-bottom: 16px;
 }
 
+h1 {
+  font-family: robotoSlab;
+  color: #0069a5;
+}
+
 nav {
   background-color: #4db1ea;
   height: 60px;
@@ -912,7 +967,7 @@ nav {
   font-family: poppinsReg;
 }
 nav .homeButton {
-  width: 80px;
+  width: 50px;
   height: 20px;
 }
 nav .homeButton img {

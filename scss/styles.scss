@@ -30,6 +30,10 @@ h6,
 p {
   margin-bottom: 16px;
 }
+h1{
+  font-family: robotoSlab;
+  color: $siteDarkBlue;
+}
 
 //Nav Styling//
 nav {
@@ -41,7 +45,7 @@ nav {
   justify-content: space-between;
   font-family: poppinsReg;
   .homeButton {
-    width: 80px;
+    width: 50px;
     height: 20px;
     img {
       max-width: 100px;

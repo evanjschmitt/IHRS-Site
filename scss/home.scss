@@ -2,6 +2,9 @@
 $siteBlue: #4db1ea;
 $siteDarkBlue: #0069a5;
 
+.homeWrapper {
+  // background-color: #0069a5;
+}
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
     url(../css/rabbitAssets/outsideImages/possibleHeader.jpg); // width: 100%;
@@ -20,6 +23,7 @@ $siteDarkBlue: #0069a5;
       font-size: 80px;
       font-family: robotoSlab;
       width: 800px;
+      color: white;
     }
     h3 {
       font-size: 30px;
@@ -33,18 +37,57 @@ $siteDarkBlue: #0069a5;
   }
 }
 
-.slideShow {
-  height: 400px;
-  max-width: 75%;
-  margin: auto;
-  background-color: red;
-  margin-bottom: 40px;
-  img {
-    width: 500px;
-    height: 500px;
+.rotd {
+  background-color: white;
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  border: 2px solid $siteDarkBlue;
+  // background-color: $siteBlue;
+  
+  border-radius: 25px;
+  .text {
+    width: 45%;
+    padding: 20px;
+    h3 {
+      margin-bottom: 100px;
+      // color: white;
+    }
+  }
+  .rabbitPic {
+    padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+    img {
+      border-radius: 25px;
+    }
+  }
+  h3 {
+    font-family: robotoSlab;
+    font-size: 40px;
+  }
+  p {
+    font-family: poppinsReg;
+    font-size: 20px;
+    // margin-top: -130px;
+    // margin-left: -80px;
+  }
+  a {
+    text-decoration: none;
+    span {
+      color: white;
+      color: $siteBlue;
+    }
+  }
+  a:hover {
+    text-decoration: underline;
+    color: $siteBlue;
+    // color: white;
   }
 }
-
 .threeBoxes {
   width: 95%;
   display: flex;
@@ -53,13 +96,14 @@ $siteDarkBlue: #0069a5;
   margin: auto;
   padding: 20px;
   margin-bottom: 20px;
+  background-color: white;
 
   .box {
     height: 450px;
     width: calc(300px + 1vw);
     min-width: 300px;
     // background-color: lightgray;
-    border: black 2px solid;
+    border: $siteDarkBlue 3px solid;
     border-radius: 10px;
     h3 {
       font-size: 45px;
@@ -88,6 +132,12 @@ $siteDarkBlue: #0069a5;
       align-items: center;
       justify-content: space-between;
       flex-direction: column;
+      .event {
+        p {
+          a {
+          }
+        }
+      }
 
       .eventsButton {
         margin-top: 20px;
@@ -151,19 +201,13 @@ $siteDarkBlue: #0069a5;
         a {
           color: $siteBlue;
         }
-        p {
-          padding: 10px;
-        }
-        span {
-          text-decoration: underline;
-          margin-top: 15px;
-        }
       }
     }
   }
 }
 
 .ourMission {
+  background-color: white;
   margin-bottom: 40px;
   display: flex;
   // align-items: center;
@@ -198,6 +242,13 @@ $siteDarkBlue: #0069a5;
 
 //Media Queries//
 @media (max-width: 1200px) {
+  .rotd {
+    flex-direction: column;
+    width: 80%;
+    .text {
+      width: 90%;
+    }
+  }
   .threeBoxes {
     flex-direction: column;
     .box {
