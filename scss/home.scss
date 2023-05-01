@@ -39,19 +39,23 @@ $siteDarkBlue: #0069a5;
 
 .rotd {
   background-color: white;
+  min-width: 700px;
   width: 60%;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 50px;
   border: 2px solid $siteDarkBlue;
   // background-color: $siteBlue;
-  
+  margin-bottom: 50px;
+
   border-radius: 25px;
   .text {
-    width: 45%;
+    // width: 45%;
     padding: 20px;
+    background-color: white;
+    margin-left: 20px;
+    border-radius: 25px;
     h3 {
       margin-bottom: 100px;
       // color: white;
@@ -59,9 +63,10 @@ $siteDarkBlue: #0069a5;
   }
   .rabbitPic {
     padding-top: 20px;
-  padding-bottom: 20px;
-  padding-right: 20px;
+    padding-bottom: 25px;
+    padding-right: 20px;
     img {
+     width: 250px;
       border-radius: 25px;
     }
   }
@@ -241,14 +246,29 @@ $siteDarkBlue: #0069a5;
 }
 
 //Media Queries//
+@media (max-width: 1500px) {
+  // .rotd{
+  //   // flex-direction: column;
+  //   height: 750px;
+  //   .text{
+  //     width: 90%;
+  //   }
+  //   .rabbitPic{
+  //     width: 100%;
+  //     margin: 0 auto;
+  //     display: flex;
+  //     align-items: center;
+  //     justify-content: space-evenly;
+      
+  //     img{
+  //       width: 30%;
+
+  //     }
+  //   }
+  // }
+
+}
 @media (max-width: 1200px) {
-  .rotd {
-    flex-direction: column;
-    width: 80%;
-    .text {
-      width: 90%;
-    }
-  }
   .threeBoxes {
     flex-direction: column;
     .box {

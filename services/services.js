@@ -24,6 +24,10 @@ export function changeRoutes() {
   }
 }
 
+export function adoptSelector(){
+
+}
+
 export function adoptableLoop() {
   for (let i = 0; i < RABBITS.length; i++) {
     let rabbit = RABBITS[i];
@@ -59,7 +63,7 @@ export function adoptableLoop() {
 export function sanctuaryLoop() {
   for (let i = 0; i < SANCTUARY.length; i++) {
     let rabbit = SANCTUARY[i];
-    // console.log(rabbit.name);
+    console.log(i);
     $("#sanctuary").append(`<div class="profile">
       <div class="left">
         <h3>${rabbit.name}</h3>
@@ -76,8 +80,8 @@ export function sanctuaryLoop() {
         <div class="bio">
           <p>${rabbit.bio}</p>
         </div>
-        <div class="bioButton">
-          <a href="#sanctuaryBio"><span>View My Bio!</span></a>
+        <div class="bioButton" id="bioButton">
+          <a href="#bio${i}"><span>View My Bio!</span></a>
         </div>
       </div>
     </div>`);
