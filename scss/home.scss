@@ -57,7 +57,7 @@ $siteDarkBlue: #0069a5;
     margin-left: 20px;
     border-radius: 25px;
     h3 {
-      margin-bottom: 100px;
+      margin-bottom: 30px;
       // color: white;
     }
   }
@@ -246,28 +246,9 @@ $siteDarkBlue: #0069a5;
 }
 
 //Media Queries//
-@media (max-width: 1500px) {
-  // .rotd{
-  //   // flex-direction: column;
-  //   height: 750px;
-  //   .text{
-  //     width: 90%;
-  //   }
-  //   .rabbitPic{
-  //     width: 100%;
-  //     margin: 0 auto;
-  //     display: flex;
-  //     align-items: center;
-  //     justify-content: space-evenly;
-      
-  //     img{
-  //       width: 30%;
 
-  //     }
-  //   }
-  // }
 
-}
+
 @media (max-width: 1200px) {
   .threeBoxes {
     flex-direction: column;
@@ -275,6 +256,9 @@ $siteDarkBlue: #0069a5;
       margin-bottom: 25px;
       width: 400px;
     }
+  }
+  .rotd{
+    width: 80%;
   }
   .ourMission {
     flex-direction: column;

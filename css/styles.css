@@ -47,7 +47,7 @@
   border-radius: 25px;
 }
 .rotd .text h3 {
-  margin-bottom: 100px;
+  margin-bottom: 30px;
 }
 .rotd .rabbitPic {
   padding-top: 20px;
@@ -222,6 +222,9 @@
   .threeBoxes .box {
     margin-bottom: 25px;
     width: 400px;
+  }
+  .rotd {
+    width: 80%;
   }
   .ourMission {
     flex-direction: column;
@@ -740,19 +743,41 @@
   font-family: robotoSlab;
   font-size: 40px;
 }
+.events a {
+  text-decoration: none;
+}
+.events a span {
+  color: #4db1ea;
+}
+.events a:hover {
+  text-decoration: underline;
+  color: #4db1ea;
+}
 .events .calendar {
   margin-bottom: 50px;
+}
+.events .calendar .month {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.events .calendar .month p {
+  color: white;
+  font-family: robotoSlabThin;
+  font-size: 25px;
+  padding-top: 10px;
 }
 .events .calendar .headers {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  background-color: #0069a5;
+  border-radius: 25px 25px 0px 0px;
+  padding-top: 10px;
   display: flex;
   align-items: center;
   background-color: #0069a5;
   color: white;
-  padding-top: 10px;
-  border-radius: 20px 20px 0px 0px;
 }
 .events .calendar .headers .header {
   width: 200px;
@@ -775,37 +800,67 @@
 .events .calendar .week .day h4 {
   font-size: 25px;
   font-family: poppinsReg;
-  padding: 10px;
+  padding: 5px;
 }
 .events .calendar .week .day ul {
   margin-left: 25px;
+  margin-top: -18px;
 }
 .events .calendar .week .day ul li {
   font-family: poppinsReg;
   padding-right: 10px;
+  font-size: 15px;
 }
-.events .calendar .week .day ul li a {
-  text-decoration: none;
-}
-.events .calendar .week .day ul li a span {
-  color: #4db1ea;
-}
-.events .calendar .week .day ul li a:hover {
-  text-decoration: underline;
-  color: #4db1ea;
+.events .calendar .week .day ul li p {
+  font-size: 15px;
 }
 .events .calendar .week .empty {
   background-color: #4db1ea;
 }
+.events .eventList h2 {
+  font-family: poppinsReg;
+  font-size: 30px;
+}
+.events .eventList ul {
+  margin-left: 25px;
+}
+.events .eventList ul li {
+  font-family: poppinsReg;
+  font-size: 20px;
+}
+.events .eventList .eventDay {
+  margin-bottom: 50px;
+}
 
-@media (max-width: 1100px) {
-  .day {
-    height: 100px;
+@media (max-width: 1200px) {
+  .events {
+    width: 95%;
   }
-  .day li {
+  .events .week {
+    min-width: 335px;
+  }
+  .events .day {
+    height: 400px;
+  }
+  .events .day li {
     font-size: 12px;
     margin-top: -15px;
-    padding-bottom: 5px;
+  }
+  .events .day p {
+    font-size: 10px;
+  }
+}
+@media (min-width: 1000px) {
+  .eventList {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .calendar {
+    display: none;
+  }
+  .eventList {
+    display: block;
   }
 }
 .eventPage {
@@ -929,6 +984,205 @@
   width: 500px;
 }
 
+.membership .section {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.membership .text {
+  padding: 20px;
+}
+.membership .text p {
+  font-family: poppinsReg;
+  font-size: 18px;
+}
+.membership .text ul {
+  padding-left: 25px;
+}
+.membership .text ul li {
+  font-family: poppinsReg;
+  font-size: 16px;
+}
+.membership .image img {
+  width: 300px;
+}
+.membership .form {
+  width: 80%;
+  margin: 0 auto;
+  border: solid 2px #0069a5;
+  border-radius: 20px;
+  padding: 40px;
+  margin-bottom: 30px;
+}
+.membership .form h2 {
+  font-size: 40px;
+  margin-top: -10px;
+}
+.membership .form h3 {
+  font-family: robotoSlab;
+  font-size: 25px;
+}
+.membership .form input {
+  margin-right: 50px;
+  font-size: 20px;
+  font-family: poppinsReg;
+}
+.membership .form select {
+  font-size: 20px;
+  font-family: poppinsReg;
+  padding: 5px;
+}
+.membership .form .multipleInput {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: -15px;
+}
+.membership .form .multipleInput h4 {
+  font-family: robotoSlab;
+  font-size: 30px;
+  color: #0069a5;
+  margin-left: 20px;
+}
+.membership .form .multipleInput .input {
+  padding: 5px;
+  margin: 10px;
+  width: 45%;
+}
+.membership .form .multipleInput .input select {
+  width: 100%;
+}
+.membership .form .row {
+  margin-bottom: 10px;
+}
+.membership .form .row input {
+  width: 98%;
+  padding: 5px;
+}
+.membership h1 {
+  font-family: robotoSlab;
+  font-size: 50px;
+  margin-top: 25px;
+}
+.membership h1 span {
+  color: #4db1ea;
+}
+.membership h2 {
+  font-family: robotoSlab;
+  font-size: 30px;
+  margin-top: 25px;
+}
+.membership p {
+  font-family: poppinsReg;
+  font-size: 20px;
+}
+.membership .price {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.membership .price span {
+  color: #0069a5;
+}
+.membership .captcha {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+.membership .purchaseButton {
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.membership .purchaseButton a {
+  text-decoration: none;
+}
+.membership .purchaseButton span {
+  background-color: #0069a5;
+  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 25px;
+  color: white;
+  width: 400px;
+  font-family: poppinsReg;
+}
+.membership .disclaimer {
+  padding: 20px;
+  margin-top: 50px;
+}
+.membership .disclaimer span {
+  color: #0069a5;
+  font-family: robotoSlab;
+}
+
+@media (max-width: 1250px) {
+  .section {
+    flex-direction: column;
+  }
+}
+.volunteer {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.volunteer p {
+  font-family: poppinsReg;
+}
+.volunteer h2 {
+  font-family: robotoSlabThin;
+}
+.volunteer span {
+  color: #0069a5;
+}
+.volunteer .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.volunteer .content .img img {
+  width: 400px;
+  padding-left: 20px;
+}
+.volunteer .volProfile {
+  margin-bottom: 25px;
+  padding-right: 20px;
+}
+.volunteer .callout {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.volunteer .contactButton {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.volunteer .contactButton a {
+  text-decoration: none;
+  background-color: #0069a5;
+  padding: 20px;
+  border-radius: 25px;
+}
+.volunteer .contactButton a span {
+  color: white;
+  font-family: poppinsReg;
+  font-size: 18px;
+}
+
+@media (max-width: 1200px) {
+  .content {
+    flex-direction: column;
+  }
+}
 * {
   margin: 0;
   padding: 0;

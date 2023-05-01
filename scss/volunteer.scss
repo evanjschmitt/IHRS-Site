@@ -1,0 +1,62 @@
+.volunteer{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    p{
+        font-family: poppinsReg;
+    }
+    h2{
+        font-family: robotoSlabThin;
+    }
+    span{
+        color: $siteDarkBlue;
+    }
+    .content{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    
+        .img{
+            img{
+                width: 400px;
+                padding-left: 20px;
+            }
+        }
+    }
+    .volProfile{
+        margin-bottom: 25px;
+        padding-right: 20px;
+    }
+
+    .callout{
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        
+    }
+    .contactButton{
+        
+        margin-top: 30px;
+        margin-bottom: 50px;
+        a{
+            text-decoration: none;
+            background-color: $siteDarkBlue;
+            padding: 20px;
+            border-radius: 25px;
+            span{
+                color: white;
+                font-family: poppinsReg;
+                font-size: 18px;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .content{
+        flex-direction: column;
+    }
+}

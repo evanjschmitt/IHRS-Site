@@ -1,0 +1,156 @@
+.membership {
+  .section {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .text {
+    padding: 20px;
+    // width: 400px;
+    p {
+      font-family: poppinsReg;
+      font-size: 18px;
+    }
+    ul {
+      padding-left: 25px;
+      li {
+        font-family: poppinsReg;
+        font-size: 16px;
+      }
+    }
+  }
+  .image {
+    img {
+      width: 300px;
+    }
+  }
+  .form {
+    width: 80%;
+    margin: 0 auto;
+    border: solid 2px $siteDarkBlue;
+    border-radius: 20px;
+    padding: 40px;
+    margin-bottom: 30px;
+    h2 {
+      font-size: 40px;
+      margin-top: -10px;
+    }
+    h3 {
+      font-family: robotoSlab;
+      font-size: 25px;
+      //   margin-top: 25px;
+    }
+    input {
+      margin-right: 50px;
+      //   height: 35px;
+      font-size: 20px;
+      font-family: poppinsReg;
+    }
+    select {
+      font-size: 20px;
+      font-family: poppinsReg;
+      padding: 5px;
+    }
+    .multipleInput {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: -15px;
+      h4 {
+        font-family: robotoSlab;
+        font-size: 30px;
+        color: $siteDarkBlue;
+        margin-left: 20px;
+      }
+      .input {
+        padding: 5px;
+        margin: 10px;
+        width: 45%;
+        select {
+          width: 100%;
+        }
+      }
+    }
+    .row {
+      margin-bottom: 10px;
+      input {
+        width: 98%;
+        padding: 5px;
+      }
+    }
+  }
+
+  h1 {
+    font-family: robotoSlab;
+    font-size: 50px;
+    margin-top: 25px;
+    span {
+      color: $siteBlue;
+    }
+  }
+  h2 {
+    font-family: robotoSlab;
+    font-size: 30px;
+    margin-top: 25px;
+  }
+  p {
+    font-family: poppinsReg;
+    font-size: 20px;
+  }
+
+  .price{
+   margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    span{
+        color: $siteDarkBlue;
+    }
+  }
+  .captcha {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 30px;
+  }
+  .purchaseButton {
+    margin: 0 auto;
+    margin-top: 50px;
+    // width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    // margin:;
+    a {
+      text-decoration: none;
+    }
+    span {
+      background-color: $siteDarkBlue;
+      padding: 20px;
+      padding-left: 40px;
+      padding-right: 40px;
+      border-radius: 25px;
+      color: white;
+      width: 400px;
+      font-family: poppinsReg;
+    }
+  }
+  .disclaimer {
+    padding: 20px;
+    margin-top: 50px;
+    span {
+      color: $siteDarkBlue;
+      font-family: robotoSlab;
+    }
+  }
+}
+
+@media (max-width: 1250px) {
+  .section {
+    flex-direction: column;
+  }
+}

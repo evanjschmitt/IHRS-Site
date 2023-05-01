@@ -4,11 +4,14 @@ export function changeRoutes() {
   let hashTag = window.location.hash;
   let pageID = hashTag.replace("#", "");
 
+  // let idx = "bio-${i}";
+  // console.log(idx.replace("bio-", " "));
+
   if (pageID != "") {
     $.get(`pages/${pageID}.html`, function (data) {
       // console.log("data" + data);
       $("#app").html(data);
-      $('html, body').animate({scrollTop: '0px'}, 0);
+      $("html, body").animate({ scrollTop: "0px" }, 0);
       if (pageID == "adoptables") {
         adoptableLoop();
       }
@@ -24,9 +27,7 @@ export function changeRoutes() {
   }
 }
 
-export function adoptSelector(){
 
-}
 
 export function adoptableLoop() {
   for (let i = 0; i < RABBITS.length; i++) {
@@ -63,7 +64,7 @@ export function adoptableLoop() {
 export function sanctuaryLoop() {
   for (let i = 0; i < SANCTUARY.length; i++) {
     let rabbit = SANCTUARY[i];
-    console.log(i);
+    // console.log(i);
     $("#sanctuary").append(`<div class="profile">
       <div class="left">
         <h3>${rabbit.name}</h3>
@@ -81,9 +82,10 @@ export function sanctuaryLoop() {
           <p>${rabbit.bio}</p>
         </div>
         <div class="bioButton" id="bioButton">
-          <a href="#bio${i}"><span>View My Bio!</span></a>
+          <a href="#bio-${i}" id="bioButton"><span>View My Bio!</span></a>
         </div>
       </div>
     </div>`);
   }
 }
+

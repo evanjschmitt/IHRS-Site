@@ -7,12 +7,38 @@
     font-family: robotoSlab;
     font-size: 40px;
   }
+  a {
+    text-decoration: none;
+    span {
+      color: $siteBlue;
+    }
+  }
+  a:hover {
+    text-decoration: underline;
+    color: $siteBlue;
+  }
   .calendar {
     margin-bottom: 50px;
+    .month {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      
+     
+      p {
+        color: white;
+        font-family: robotoSlabThin;
+        font-size: 25px;
+        padding-top: 10px;
+      }
+    }
     .headers {
       display: flex;
       align-items: center;
       justify-content: space-evenly;
+      background-color: $siteDarkBlue;
+      border-radius: 25px 25px 0px 0px;
+      padding-top: 10px;
       .header {
         width: 200px;
         display: flex;
@@ -23,8 +49,8 @@
 
       background-color: $siteDarkBlue;
       color: white;
-      padding-top: 10px;
-      border-radius: 20px 20px 0px 0px;
+      
+
       p {
         font-family: robotoSlabNormal;
         // border: 2px solid white;
@@ -34,30 +60,29 @@
       display: flex;
       align-items: center;
       justify-content: space-evenly;
+      
+      
       .day {
         width: 14.5%;
-        height: 200px;
+       height: 200px;
+        
         border: 2px solid $siteDarkBlue;
         h4 {
           font-size: 25px;
           font-family: poppinsReg;
-          padding: 10px;
+          padding: 5px;
         }
         ul {
           margin-left: 25px;
+          margin-top: -18px;
           li {
             font-family: poppinsReg;
             padding-right: 10px;
-            a {
-              text-decoration: none;
-              span {
-                color: $siteBlue;
-              }
+            font-size: 15px;
+            p{
+              font-size: 15px;
             }
-            a:hover {
-              text-decoration: underline;
-              color: $siteBlue;
-            }
+            
           }
         }
       }
@@ -66,18 +91,57 @@
       }
     }
   }
+  .eventList{
+    h2{
+      font-family: poppinsReg;
+      font-size: 30px;
+    }
+    ul{
+      margin-left: 25px;
+      li{
+        font-family: poppinsReg;
+        font-size: 20px;
+      }
+    }
+    .eventDay{
+      margin-bottom: 50px;
+    }
+  }
 }
 
 //Events MQ//
-@media (max-width: 1100px) {
-  .day {
-    height: 100px;
-    li {
-      font-size: 12px;
-      margin-top: -15px;
-      padding-bottom: 5px;
+@media (max-width: 1200px) {
+  .events {
+    width: 95%;
+    .week{
+      min-width: 335px;
+    }
+    .day {
+      height: 400px;
+      li {
+        font-size: 12px;
+        margin-top: -15px;
+      }
+      p{
+        font-size: 10px;
+        
+      }
     }
   }
+}
+@media (min-width: 1000px) {
+  .eventList{
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .calendar{
+    display: none;
+  }
+  .eventList{
+    display: block;
+  }
+
 }
 
 //Event Page Styling//
