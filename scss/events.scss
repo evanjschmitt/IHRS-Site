@@ -181,9 +181,20 @@
 
 @media (max-width: 1200px) {
   .eventPage {
+    height: 800px;
     .content {
+      flex-direction: column;
+      // margin-bottom: 50px;
+      // height: 1200px;
+      // background-color: green;
+      // margin-bottom: 100px;
+      .img{
+        // margin-bottom: 20px;
+      }
       img {
         max-width: 250px;
+        // margin-bottom: 250px;
+
       }
     }
   }

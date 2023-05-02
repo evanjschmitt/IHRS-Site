@@ -897,6 +897,12 @@
 }
 
 @media (max-width: 1200px) {
+  .eventPage {
+    height: 800px;
+  }
+  .eventPage .content {
+    flex-direction: column;
+  }
   .eventPage .content img {
     max-width: 250px;
   }
