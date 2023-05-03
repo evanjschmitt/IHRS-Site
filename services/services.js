@@ -27,8 +27,6 @@ export function changeRoutes() {
   }
 }
 
-
-
 export function adoptableLoop() {
   for (let i = 0; i < RABBITS.length; i++) {
     let rabbit = RABBITS[i];
@@ -53,12 +51,46 @@ export function adoptableLoop() {
         </div>
           <p>${rabbit.bio}</p>
         </div>
-        <div class="bioButton">
-          <a href="#rabbitBio"><span>View My Bio!</span></a>
+        <div class="bioButton" id="rabbit" onclick="rabbitInfo">
+          View My Bio
         </div>
       </div>
     </div>`);
+
+    rabbitInfo();
   }
+}
+function rabbitInfo() {
+  // let i = 0; i < RABBITS.length; i++
+  // let rabbit = RABBITS[i]
+  $('.bioButton').click(function(e) {
+    console.log(e)
+    let profile = e.currentTarget.id
+    console.log('clicked' + profile);
+    $("#adopt").html(`<div class="profile">
+      <div class="left">
+        <h3>${RABBITS[profile].name}</h3>
+        <img src="${RABBITS.image}" alt="${RABBITS.name}'s Profile Picture">
+        <div class="info">
+          <p><span>Breed:</span> ${RABBITS.breed}</p>
+          <p><span>Sex:</span> ${RABBITS.sex}</p>
+          <p><span>Age:</span> ${RABBITS.age}</p>
+          <p><span>Weight:</span> ${RABBITS.weight}</p>
+        </div>
+  
+      </div>
+      <div class="right">
+        <div class="bio">
+        <div class="special">
+          <p>${RABBITS.bonded}</p>
+          <p>${RABBITS.RAC}</p>
+        </div>
+          <p>${RABBITS.bio}</p>
+        </div>
+        <div class="backBtn" onclick="closeWindow()">Go Back</div>
+      </div>
+    </div>`);
+  })
 }
 
 export function sanctuaryLoop() {
@@ -89,3 +121,8 @@ export function sanctuaryLoop() {
   }
 }
 
+export function closeWindow() {
+  console.log("Window Closed");
+  $("#adopt").html(``);
+  adoptableLoop();
+}

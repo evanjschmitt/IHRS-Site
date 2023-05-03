@@ -1,0 +1,52 @@
+.infoPage {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+  min-height: 750px;
+  p {
+    font-family: poppinsReg;
+  }
+  a {
+    color: $siteBlue;
+    text-decoration: none;
+    font-family: poppinsReg;
+  }
+  h3 {
+    font-family: robotoSlab;
+    font-size: 20px;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  h2 {
+    color: $siteDarkBlue;
+    text-decoration: none;
+    font-family: poppinsReg;
+  }
+  .resource {
+    margin-bottom: 20px;
+    p {
+      margin-top: -15px;
+    }
+    h2 {
+      a {
+        color: $siteBlue;
+        text-decoration: none;
+        font-family: poppinsReg;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.shelterList {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.vetList{
+    .vet{
+        margin-bottom: 30px;
+    }
+}

@@ -1189,6 +1189,56 @@
     flex-direction: column;
   }
 }
+.infoPage {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+  min-height: 750px;
+}
+.infoPage p {
+  font-family: poppinsReg;
+}
+.infoPage a {
+  color: #4db1ea;
+  text-decoration: none;
+  font-family: poppinsReg;
+}
+.infoPage h3 {
+  font-family: robotoSlab;
+  font-size: 20px;
+}
+.infoPage a:hover {
+  text-decoration: underline;
+}
+.infoPage h2 {
+  color: #0069a5;
+  text-decoration: none;
+  font-family: poppinsReg;
+}
+.infoPage .resource {
+  margin-bottom: 20px;
+}
+.infoPage .resource p {
+  margin-top: -15px;
+}
+.infoPage .resource h2 a {
+  color: #4db1ea;
+  text-decoration: none;
+  font-family: poppinsReg;
+}
+.infoPage .resource h2 a:hover {
+  text-decoration: underline;
+}
+
+.shelterList {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.vetList .vet {
+  margin-bottom: 30px;
+}
+
 * {
   margin: 0;
   padding: 0;
