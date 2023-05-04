@@ -66,7 +66,7 @@ $siteDarkBlue: #0069a5;
     padding-bottom: 25px;
     padding-right: 20px;
     img {
-     width: 250px;
+      width: 250px;
       border-radius: 25px;
     }
   }
@@ -235,19 +235,24 @@ $siteDarkBlue: #0069a5;
     }
   }
   .logo {
-    background-image: url(css/rabbitAssets/icons/evLogoDesign.png);
-    height: 400px;
+    margin-bottom: 300px;
+
+    img {
+      width: 400px;
+      margin-top: -50px;
+      // margin-bottom: 250px;
+    }
+    // background-image: url(css/rabbitAssets/icons/evLogoDesign.png);
+    height: 200px;
     width: 400px;
-    background-size: contain;
-    background-repeat: no-repeat;
+    // background-size: contain;
+    // background-repeat: no-repeat;
     padding: 20px;
     margin-top: 50px;
   }
 }
 
 //Media Queries//
-
-
 
 @media (max-width: 1200px) {
   .threeBoxes {
@@ -257,7 +262,7 @@ $siteDarkBlue: #0069a5;
       width: 400px;
     }
   }
-  .rotd{
+  .rotd {
     width: 80%;
   }
   .ourMission {
@@ -269,7 +274,8 @@ $siteDarkBlue: #0069a5;
     }
     .logo {
       margin: 0 auto;
-      margin-bottom: 50px;
+      margin-bottom: 300px;
+      margin-top: 50px;
     }
   }
 }

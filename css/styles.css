@@ -206,13 +206,15 @@
   margin-left: 20px;
 }
 .ourMission .logo {
-  background-image: url(../css/rabbitAssets/icons/EvLogoDesign.png);
-  height: 400px;
+  margin-bottom: 300px;
+  height: 200px;
   width: 400px;
-  background-size: contain;
-  background-repeat: no-repeat;
   padding: 20px;
   margin-top: 50px;
+}
+.ourMission .logo img {
+  width: 400px;
+  margin-top: -50px;
 }
 
 @media (max-width: 1200px) {
@@ -236,7 +238,8 @@
   }
   .ourMission .logo {
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 300px;
+    margin-top: 50px;
   }
 }
 @font-face {
@@ -1290,7 +1293,7 @@
   width: 80%;
   margin: 0 auto;
   margin-top: 30px;
-  min-height: 750px;
+  min-height: 768px;
 }
 .infoPage p {
   font-family: poppinsReg;
