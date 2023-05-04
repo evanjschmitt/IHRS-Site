@@ -65,7 +65,7 @@
       a {
         text-decoration: none;
         span {
-          background-color: $siteBlue;
+          background-color: $siteDarkBlue;
           padding: 25px;
           font-size: 25px;
           border-radius: 25px;
@@ -92,9 +92,9 @@
   width: 70%;
   margin: 0 auto;
 
-  .special{
+  .special {
     color: $siteDarkBlue;
-    p{
+    p {
       font-size: 250px;
     }
   }
@@ -139,7 +139,7 @@
 
     .left {
       font-family: robotoSlabNormal;
-      
+
       span {
         margin-right: 10px;
         color: $siteDarkBlue;
@@ -183,7 +183,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  img{
+  img {
     width: 200px;
     margin-top: -150px;
     margin-left: 25px;
@@ -192,7 +192,7 @@
   .descText {
     font-family: poppinsReg;
     font-size: 20px;
-    
+
     .sponsorButton {
       margin: 0 auto;
       margin-top: 75px;
@@ -227,21 +227,31 @@
       margin-bottom: 25px;
     }
   }
-  .desc{
+  .desc {
     margin-bottom: 50px;
   }
 }
 
 //Rabbit Bio Page Styling//
+.return {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 50px;
+  i {
+    color: $siteDarkBlue;
+    font-size: 50px;
+  }
+}
+
 .rabbitBio {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 50px;
-  width: 90%;
+  width: 80%;
   margin: auto;
-  margin-top: 25px;
-  min-height: calc(89% - 60px);
+  // margin-top: 25px;
+  min-height: 698px;
 
   h4 {
     font-family: robotoSlab;
@@ -267,10 +277,21 @@
     width: 50%;
     margin: 0 auto;
     padding: 30px;
+    margin-bottom: 20px;
+    a {
+      text-decoration: none;
+      color: $siteBlue;
+      span {
+        font-family: poppinsReg;
+      }
+    }
+    a:hover {
+      text-decoration: underline;
+    }
   }
   .images {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-evenly;
     flex-direction: column;
     img {
@@ -281,9 +302,9 @@
 
 //Rabbit Bio MQ//
 @media (max-width: 1200px) {
-
   .rabbitBio {
     flex-direction: column;
+    // align-items: left;
     .bio {
       width: 80%;
     }
@@ -309,7 +330,7 @@
     }
   }
   .form {
-    // width: 50%;
+    width: 80%;
     margin: 0 auto;
     border: solid 2px $siteDarkBlue;
     border-radius: 20px;
@@ -322,26 +343,94 @@
     h3 {
       font-family: robotoSlab;
       font-size: 25px;
-      margin-top: 25px;
+      span {
+        margin-bottom: 10px;
+        padding-right: -20px;
+      }
     }
-    textarea {
+    input {
       margin-right: 50px;
-      height: 35px;
+      //   height: 35px;
       font-size: 20px;
       font-family: poppinsReg;
+    }
+    select {
+      font-size: 20px;
+      font-family: poppinsReg;
+      padding: 5px;
     }
     .multipleInput {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      margin-left: -15px;
+      h4 {
+        font-family: robotoSlab;
+        font-size: 30px;
+        color: $siteDarkBlue;
+        margin-left: 20px;
+      }
+      .input {
+        padding: 5px;
+        margin: 10px;
+        width: 45%;
+        select {
+          width: 100%;
+        }
+      }
     }
     .row {
-      textarea {
-        width: 100%;
+      margin-bottom: 10px;
+      input {
+        width: 98%;
+        padding: 5px;
       }
     }
   }
+  .captcha {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+  }
+  .submitButton {
+    margin: 0 auto;
+    margin-top: 50px;
+    // width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 
+    // margin:;
+    a {
+      text-decoration: none;
+    }
+    span {
+      background-color: $siteDarkBlue;
+      padding: 20px;
+      padding-left: 40px;
+      padding-right: 40px;
+      border-radius: 25px;
+      color: white;
+      width: 400px;
+      font-family: poppinsReg;
+      font-size: 20px;
+    }
+  }
+  .disclaimer {
+    margin-top: 50px;
+    h2 {
+      color: $siteBlue;
+    }
+    a {
+      color: $siteBlue;
+      text-decoration: none;
+      font-family: poppinsReg;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
   h1 {
     font-family: robotoSlab;
     font-size: 50px;

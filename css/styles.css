@@ -329,7 +329,7 @@
   text-decoration: none;
 }
 .adoption .soloSection .adoptablesButton a span {
-  background-color: #4db1ea;
+  background-color: #0069a5;
   padding: 25px;
   font-size: 25px;
   border-radius: 25px;
@@ -475,15 +475,24 @@
     margin-bottom: 50px;
   }
 }
+.return {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+.return i {
+  color: #0069a5;
+  font-size: 50px;
+}
+
 .rabbitBio {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 50px;
-  width: 90%;
+  width: 80%;
   margin: auto;
-  margin-top: 25px;
-  min-height: calc(89% - 60px);
+  min-height: 698px;
 }
 .rabbitBio h4 {
   font-family: robotoSlab;
@@ -508,10 +517,21 @@
   width: 50%;
   margin: 0 auto;
   padding: 30px;
+  margin-bottom: 20px;
+}
+.rabbitBio .bio a {
+  text-decoration: none;
+  color: #4db1ea;
+}
+.rabbitBio .bio a span {
+  font-family: poppinsReg;
+}
+.rabbitBio .bio a:hover {
+  text-decoration: underline;
 }
 .rabbitBio .images {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-evenly;
   flex-direction: column;
 }
@@ -546,6 +566,7 @@
   margin-top: -2px;
 }
 .questionnaire .form {
+  width: 80%;
   margin: 0 auto;
   border: solid 2px #0069a5;
   border-radius: 20px;
@@ -559,21 +580,88 @@
 .questionnaire .form h3 {
   font-family: robotoSlab;
   font-size: 25px;
-  margin-top: 25px;
 }
-.questionnaire .form textarea {
+.questionnaire .form h3 span {
+  margin-bottom: 10px;
+  padding-right: -20px;
+}
+.questionnaire .form input {
   margin-right: 50px;
-  height: 35px;
   font-size: 20px;
   font-family: poppinsReg;
+}
+.questionnaire .form select {
+  font-size: 20px;
+  font-family: poppinsReg;
+  padding: 5px;
 }
 .questionnaire .form .multipleInput {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-left: -15px;
 }
-.questionnaire .form .row textarea {
+.questionnaire .form .multipleInput h4 {
+  font-family: robotoSlab;
+  font-size: 30px;
+  color: #0069a5;
+  margin-left: 20px;
+}
+.questionnaire .form .multipleInput .input {
+  padding: 5px;
+  margin: 10px;
+  width: 45%;
+}
+.questionnaire .form .multipleInput .input select {
   width: 100%;
+}
+.questionnaire .form .row {
+  margin-bottom: 10px;
+}
+.questionnaire .form .row input {
+  width: 98%;
+  padding: 5px;
+}
+.questionnaire .captcha {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+.questionnaire .submitButton {
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.questionnaire .submitButton a {
+  text-decoration: none;
+}
+.questionnaire .submitButton span {
+  background-color: #0069a5;
+  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 25px;
+  color: white;
+  width: 400px;
+  font-family: poppinsReg;
+  font-size: 20px;
+}
+.questionnaire .disclaimer {
+  margin-top: 50px;
+}
+.questionnaire .disclaimer h2 {
+  color: #4db1ea;
+}
+.questionnaire .disclaimer a {
+  color: #4db1ea;
+  text-decoration: none;
+  font-family: poppinsReg;
+}
+.questionnaire .disclaimer a:hover {
+  text-decoration: underline;
 }
 .questionnaire h1 {
   font-family: robotoSlab;
@@ -1237,6 +1325,55 @@
 
 .vetList .vet {
   margin-bottom: 30px;
+}
+
+.faq {
+  width: 80%;
+  margin: 0 auto;
+}
+.faq h1 {
+  margin-top: 50px;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.faq .jumpTo li {
+  font-family: poppinsReg;
+  margin-left: 25px;
+  color: white;
+  margin-top: 10px;
+}
+.faq .jumpTo li a {
+  text-decoration: none;
+  color: #4db1ea;
+  font-size: 18px;
+}
+.faq .jumpTo li a:hover {
+  text-decoration: underline;
+}
+.faq p {
+  font-family: poppinsReg;
+  margin-bottom: 10px;
+}
+.faq h2 {
+  color: #0069a5;
+  font-family: robotoSlab;
+}
+.faq h3 {
+  font-family: poppinsReg;
+  color: #4db1ea;
+}
+.faq .section {
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+.faq .section ul {
+  margin-left: 25px;
+  font-family: poppinsReg;
+  margin-bottom: 10px;
+}
+.faq .section ul li {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 * {

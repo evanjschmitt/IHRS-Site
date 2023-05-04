@@ -200,7 +200,7 @@ export var RABBITS = [
     weight: "4.4 Pounds",
     bio: "I'm Lani and I'm new here! I was found running loose for at least a month, it was cold out and hard to find food! I'm happy to be a house rabbit now and I'm already good with my litterbox and excited for people to bring me food. :)",
     bonded: "",
-    RAC: "I'm at the Rabbit Adoption Center! Come visit me!",
+    RAC: "I'm at the Ra bbit Adoption Center! Come visit me!",
   },
 
   {
@@ -349,7 +349,7 @@ export var RABBITS = [
 
   {
     name: "Rosevie",
-    image: "css/rabbitAssets/rabbitImages/Rosevie.png",
+    image: "css/rabbitAssets/rabbitImages/rosevie2.png",
     breed: "Mix",
     sex: "Female",
     age: "2 Years, 2 Months",
@@ -564,7 +564,7 @@ export var SANCTUARY = [
     image: "css/rabbitAssets/sanctuaryImages/Ramonda.png",
     breed: "New Zealand",
     sex: "Female",
-    age: "4 Years, 2 Month",
+    age: "4 Years, 2 Months",
     weight: "10.8 Pounds",
     bio: "This is Ramonda, named after the queen of Wakanda in the Black Panther movie, because she’s so stately and an old soul bunny. She’s very calm and very wise. How many bunnies could come from living in a less than ideal outdoor situation and have excellent litter box habits and take great care of 11 babies? She truly is a queen bunny. She loves treats and is an expert requester of treats (queens never beg). She likes head pets and attention but is also a pretty chill bunny. Her foster mom forgets to close and latch the pen and she’s quite content to stay put. As her babies are weaned and she gets her independence back, we’ll discover more about her personality.",
   },
