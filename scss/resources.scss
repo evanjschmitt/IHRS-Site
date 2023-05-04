@@ -14,6 +14,7 @@
   h3 {
     font-family: robotoSlab;
     font-size: 20px;
+    // color: $siteDarkBlue;
   }
   a:hover {
     text-decoration: underline;
@@ -46,8 +47,10 @@
   margin-bottom: 20px;
 }
 .vetList{
+  margin-top: 20px;
     .vet{
-        margin-bottom: 30px;
+        margin-bottom: 40px;
+        
     }
 }
 
@@ -86,7 +89,8 @@
   }
   h3{
     font-family: poppinsReg;
-    color: $siteBlue;
+    // color: $siteBlue;
+    margin-top: 10px;
   }
   .section{
     margin-bottom: 25px;

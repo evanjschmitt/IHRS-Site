@@ -954,10 +954,19 @@
 .eventPage {
   width: 80%;
   margin: 0 auto;
-  height: 738px;
+  min-height: 87vh;
+}
+.eventPage .return {
+  width: 90%;
+  margin: 0 auto;
+  margin-left: -40px;
+}
+.eventPage .return i {
+  color: #0069a5;
+  font-size: 50px;
 }
 .eventPage .content {
-  margin-top: 50px;
+  margin-top: 40px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -1323,8 +1332,11 @@
   margin-bottom: 20px;
 }
 
+.vetList {
+  margin-top: 20px;
+}
 .vetList .vet {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .faq {
@@ -1360,7 +1372,7 @@
 }
 .faq h3 {
   font-family: poppinsReg;
-  color: #4db1ea;
+  margin-top: 10px;
 }
 .faq .section {
   margin-bottom: 25px;

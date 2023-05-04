@@ -149,9 +149,19 @@
   width: 80%;
   margin: 0 auto;
 
-  height: calc(848px - 110px);
+  min-height: 87vh ;
+  .return {
+    width: 90%;
+    margin: 0 auto;
+    margin-left: -40px;
+    // padding-top: 50px;
+    i {
+      color: $siteDarkBlue;
+      font-size: 50px;
+    }
+  }
   .content {
-    margin-top: 50px;
+    margin-top: 40px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
